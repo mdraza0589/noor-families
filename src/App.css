@@ -1,0 +1,543 @@
+ @keyframes fadeInUp {
+     from {
+         opacity: 0;
+         transform: translateY(40px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes fadeInDown {
+     from {
+         opacity: 0;
+         transform: translateY(-40px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes fadeInLeft {
+     from {
+         opacity: 0;
+         transform: translateX(-40px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateX(0);
+     }
+ }
+
+ @keyframes fadeInRight {
+     from {
+         opacity: 0;
+         transform: translateX(40px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateX(0);
+     }
+ }
+
+ @keyframes scaleIn {
+     from {
+         opacity: 0;
+         transform: scale(0.8);
+     }
+
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ @keyframes float {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-10px);
+     }
+ }
+
+ .animate-fadeInUp {
+     animation: fadeInUp 0.8s ease-out forwards;
+ }
+
+ .animate-fadeInDown {
+     animation: fadeInDown 0.8s ease-out forwards;
+ }
+
+ .animate-fadeInLeft {
+     animation: fadeInLeft 0.8s ease-out forwards;
+ }
+
+ .animate-fadeInRight {
+     animation: fadeInRight 0.8s ease-out forwards;
+ }
+
+ .animate-scaleIn {
+     animation: scaleIn 0.8s ease-out forwards;
+ }
+
+ .animate-float {
+     animation: float 3s ease-in-out infinite;
+ }
+
+ .opacity-0 {
+     opacity: 0;
+ }
+
+ .opacity-100 {
+     opacity: 1;
+ }
+
+ .transition-all {
+     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .delay-200 {
+     animation-delay: 200ms;
+ }
+
+ .delay-400 {
+     animation-delay: 400ms;
+ }
+
+ .delay-600 {
+     animation-delay: 600ms;
+ }
+
+ .delay-800 {
+     animation-delay: 800ms;
+ }
+
+ .slide-in-section {
+     opacity: 0;
+     transform: translateY(60px);
+     transition: opacity 0.8s ease, transform 0.8s ease;
+ }
+
+ .slide-in-section.animate-in {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ /* Gradient animation for background */
+ .animated-gradient {
+     background: linear-gradient(-45deg, #1e1b4b, #0f172a, #312e81, #1e1b4b);
+     background-size: 400% 400%;
+     animation: gradientShift 15s ease infinite;
+ }
+
+ @keyframes gradientShift {
+     0% {
+         background-position: 0% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+
+ /* Image hover effect */
+ .image-hover-effect {
+     transition: transform 0.5s ease, box-shadow 0.5s ease;
+ }
+
+ .image-hover-effect:hover {
+     transform: scale(1.05);
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+ }
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+
+     .animate-fadeInLeft,
+     .animate-fadeInRight {
+         animation: fadeInUp 0.8s ease-out forwards;
+     }
+ }
+
+ /* Profile Page Animations */
+ .profile-entrance {
+     animation: profileSlideIn 0.8s ease-out forwards;
+ }
+
+ @keyframes profileSlideIn {
+     from {
+         opacity: 0;
+         transform: translateY(40px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .profile-image-container {
+     position: relative;
+     display: inline-block;
+     animation: floatImage 6s ease-in-out infinite;
+ }
+
+ @keyframes floatImage {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-15px);
+     }
+ }
+
+ .profile-image-glow {
+     position: absolute;
+     top: -10px;
+     left: -10px;
+     right: -10px;
+     bottom: -10px;
+     border-radius: 50%;
+     background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+     background-size: 400% 400%;
+     animation: gradientShift 8s ease infinite;
+     z-index: -1;
+     opacity: 0.3;
+     filter: blur(15px);
+ }
+
+ @keyframes gradientShift {
+
+     0%,
+     100% {
+         background-position: 0% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+ }
+
+ .spouse-card {
+     animation: scaleIn 0.6s ease-out 0.3s forwards;
+     opacity: 0;
+     transform: scale(0.8);
+ }
+
+ @keyframes scaleIn {
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ .child-card {
+     opacity: 0;
+     transform: translateY(30px);
+     animation: childAppear 0.5s ease-out forwards;
+ }
+
+ @keyframes childAppear {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .stagger-1 {
+     animation-delay: 0.1s;
+ }
+
+ .stagger-2 {
+     animation-delay: 0.2s;
+ }
+
+ .stagger-3 {
+     animation-delay: 0.3s;
+ }
+
+ .stagger-4 {
+     animation-delay: 0.4s;
+ }
+
+ .stagger-5 {
+     animation-delay: 0.5s;
+ }
+
+ .stagger-6 {
+     animation-delay: 0.6s;
+ }
+
+ /* Profile link hover effects */
+ .profile-link {
+     transition: all 0.3s ease;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .profile-link::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+     transition: left 0.5s ease;
+ }
+
+ .profile-link:hover::before {
+     left: 100%;
+ }
+
+ .profile-link:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Decorative elements */
+ .decorative-line {
+     height: 3px;
+     background: linear-gradient(90deg, transparent, #8b5cf6, transparent);
+     width: 80%;
+     margin: 20px auto;
+     border-radius: 3px;
+ }
+
+ .back-button {
+     position: relative;
+     overflow: hidden;
+     transition: all 0.3s ease;
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ }
+
+ .back-button::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+     transition: left 0.5s ease;
+ }
+
+ .back-button:hover::before {
+     left: 100%;
+ }
+
+ .back-button:hover {
+     transform: translateX(-5px);
+ }
+
+ /* Status badge */
+ .marriage-status {
+     animation: pulse 2s infinite;
+ }
+
+ @keyframes pulse {
+
+     0%,
+     100% {
+         opacity: 1;
+     }
+
+     50% {
+         opacity: 0.7;
+     }
+ }
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+     .profile-image-container {
+         animation: floatImageMobile 6s ease-in-out infinite;
+     }
+
+     @keyframes floatImageMobile {
+
+         0%,
+         100% {
+             transform: translateY(0);
+         }
+
+         50% {
+             transform: translateY(-10px);
+         }
+     }
+ }
+
+
+
+
+ /* *********************************************************************************************** */
+
+
+
+ /* Personal Info Section Styles */
+ .info-card {
+     background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     transition: all 0.4s ease;
+ }
+
+ .info-card:hover {
+     background: rgba(255, 255, 255, 0.1);
+     border-color: rgba(255, 255, 255, 0.2);
+     transform: translateY(-5px);
+ }
+
+ .info-grid {
+     display: grid;
+     gap: 1.5rem;
+ }
+
+ .info-item {
+     opacity: 0;
+     transform: translateY(20px);
+     animation: slideUpItem 0.6s ease-out forwards;
+ }
+
+ @keyframes slideUpItem {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .hobby-tag {
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     color: white;
+     padding: 0.5rem 1rem;
+     border-radius: 2rem;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     transition: all 0.3s ease;
+ }
+
+ .hobby-tag:hover {
+     transform: scale(1.05);
+     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+ }
+
+ .place-badge {
+     background: rgba(255, 255, 255, 0.1);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     color: white;
+     padding: 0.5rem 1rem;
+     border-radius: 1rem;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     transition: all 0.3s ease;
+ }
+
+ .place-badge:hover {
+     background: rgba(255, 255, 255, 0.2);
+     border-color: rgba(255, 255, 255, 0.3);
+ }
+
+ .info-icon {
+     width: 3rem;
+     height: 3rem;
+     border-radius: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.5rem;
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ }
+
+ .section-title {
+     position: relative;
+     display: inline-block;
+     padding-bottom: 0.5rem;
+ }
+
+ .section-title::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background: linear-gradient(90deg, #667eea, #764ba2);
+     border-radius: 3px;
+ }
+
+ /* Color badge for favorite color */
+ .color-badge {
+     width: 2rem;
+     height: 2rem;
+     border-radius: 0.5rem;
+     display: inline-block;
+     margin-right: 0.5rem;
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ /* About section styles */
+ .about-section {
+     position: relative;
+     padding: 2rem;
+     border-radius: 1rem;
+     background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(10px);
+ }
+
+ .about-section::before {
+     content: '"';
+     position: absolute;
+     top: 1rem;
+     left: 1rem;
+     font-size: 4rem;
+     font-family: Georgia, serif;
+     color: rgba(255, 255, 255, 0.1);
+ }
+
+ /* Contact info styles */
+ .contact-item {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     padding: 1rem;
+     background: rgba(255, 255, 255, 0.05);
+     border-radius: 1rem;
+     transition: all 0.3s ease;
+ }
+
+ .contact-item:hover {
+     background: rgba(255, 255, 255, 0.1);
+     transform: translateX(5px);
+ }
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+     .info-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .info-icon {
+         width: 2.5rem;
+         height: 2.5rem;
+         font-size: 1.25rem;
+     }
+ }

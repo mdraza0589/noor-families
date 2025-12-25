@@ -36,7 +36,7 @@ const FamilyGalleryPage = () => {
                         {familyGallery.categories.map((category) => (
                             <div
                                 key={category.id}
-                                className="bg-white/5 rounded-3xl p-6 sm:p-8 border border-white/10 shadow-lg"
+                                className="bg-white/5 rounded-3xl p-2 sm:p-8 border border-white/10 shadow-lg"
                             >
                                 {/* Category Header */}
                                 <div className="mb-8">
@@ -108,7 +108,7 @@ const FamilyGalleryPage = () => {
                     {/* ================= BACK BUTTON ================= */}
                     <div className="text-center mt-20">
                         <Link
-                            to="/"
+                            to="/home"
                             className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 hover:bg-white/20 transition text-sm"
                         >
                             ← Back to Home

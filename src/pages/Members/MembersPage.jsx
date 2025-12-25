@@ -56,8 +56,8 @@ const MembersPage = () => {
         }
         .image-container {
           position: relative;
-          width: 160px;
-          height: 160px;
+          width: 140px;
+          height: 140px;
           margin: 0 auto 20px;
         }
         .circle-image {
@@ -112,7 +112,7 @@ const MembersPage = () => {
           </div>
 
           {/* Members Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
             {family.siblings.map((member, index) => (
               <Link
                 to={`/profile/${member.id}`}
@@ -120,7 +120,7 @@ const MembersPage = () => {
                 className="member-card"
                 ref={(el) => (memberRefs.current[index] = el)}
               >
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center mb-4">
                   <div className="image-container">
                     <div className="circle-ring"></div>
                     <img

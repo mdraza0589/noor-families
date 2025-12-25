@@ -9,6 +9,34 @@ const Image6 = "/images/image-6.png";
 const Image7 = "/images/ammi.png";
 const Image1 = "/images/image-1.png";
 const child1 = "/images/image-4.png"
+
+
+
+const aizah_Profile = '/gallery/profileImage/aizah.jpg'
+const dilshad_Profile = '/gallery/profileImage/dilshad.jpg'
+const jugnu_Profile = '/gallery/profileImage/jugnu.jpg'
+const raza_Profile = '/gallery/profileImage/raza.jpg'
+const shad_Profile = '/gallery/profileImage/shad.jpg'
+const tahira_Profile = '/gallery/profileImage/tahira.jpg'
+const ahamad_Profile = '/gallery/profileImage/ahamad.png'
+const mashuk_Profile = '/gallery/profileImage/mashuk.jpg'
+const mutabbar_Profile = '/gallery/profileImage/mutabbar.jpg'
+const washuk_Profile = '/gallery/profileImage/washuk.png'
+const murtuja_Profile = '/gallery/profileImage/murtuja.png'
+const sahib_Profile = '/gallery/profileImage/sahib.png'
+const tahsin_Profile = '/gallery/profileImage/tahsin.png'
+const mosahid_Profile = '/gallery/profileImage/mosahid.png'
+const wasim_Profile = '/gallery/profileImage/wasim.png'
+const suhail_Profile = '/gallery/profileImage/suhail.png'
+const zeeshan_Profile = '/gallery/profileImage/zeeshan.png'
+const anwar_Profile = '/gallery/profileImage/anwar.png'
+const rahat_Profile = '/gallery/profileImage/rahat.png'
+const aman_Profile = '/gallery/profileImage/aman.png'
+const asif_Profile = '/gallery/profileImage/asif.png'
+
+
+
+
 export const family = {
     familyName: "The Noor Family",
 
@@ -51,7 +79,7 @@ export const family = {
                 hobbies: ["Cooking", "Prayer", "Teaching children"],
                 favoriteColor: "Green",
                 favoriteFood: "Biryani",
-                visitedPlaces: ["Bhopal", "Ujjain"],
+                visitedPlaces: ["Saudi"],
                 phone: "9XXXXXXXXX",
                 about:
                     "The emotional pillar of the family, loving, patient, and deeply caring.",
@@ -65,7 +93,7 @@ export const family = {
         {
             id: "sibling-murtuja-ali",
             name: "Murtuja Ali",
-            image: DEFAULT_IMAGE,
+            image: murtuja_Profile,
             isMarried: true,
             personalInfo: {
                 dob: "-- -- ----",
@@ -100,32 +128,11 @@ export const family = {
                 },
             },
             children: [
-                {
-                    id: "child-dilshad-raza",
-                    name: "Dilshad Raza",
-                    image: DEFAULT_IMAGE,
-                    isMarried: false,
-                    spouse: null,
-                    personalInfo: {
-                        dob: "26-05-2007",
-                        bloodGroup: "B+",
-                        education: "School",
-                        father: "Murtuja Ali",
-                        mother: "Fargab aara",
-                        occupation: "Student",
-                        hobbies: ["Cricket", "Drawing"],
-                        favoriteColor: "Red",
-                        favoriteFood: "Pizza",
-                        visitedPlaces: ["Delhi", "Mumbai"],
-                        phone: "",
-                        about: "Energetic and creative.",
-                    },
-                    children: [],
-                },
+
                 {
                     id: "child-sahib-musarraf",
                     name: "Sahib Musarraf",
-                    image: DEFAULT_IMAGE,
+                    image: sahib_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -185,7 +192,7 @@ export const family = {
                         {
                             id: "child-ayaan-rahil",
                             name: "Aizah Fatima",
-                            image: child1,
+                            image: aizah_Profile,
                             isMarried: false,
                             spouse: null,
                             personalInfo: {
@@ -206,14 +213,36 @@ export const family = {
                         },
                     ],
                 },
+                {
+                    id: "child-dilshad-raza",
+                    name: "Dilshad Raza",
+                    image: dilshad_Profile,
+                    isMarried: false,
+                    spouse: null,
+                    personalInfo: {
+                        dob: "26-05-2007",
+                        bloodGroup: "B+",
+                        education: "School",
+                        father: "Murtuja Ali",
+                        mother: "Fargab aara",
+                        occupation: "Student",
+                        hobbies: ["Cricket", "Drawing"],
+                        favoriteColor: "Red",
+                        favoriteFood: "Pizza",
+                        visitedPlaces: ["Delhi", "Mumbai"],
+                        phone: "",
+                        about: "Energetic and creative.",
+                    },
+                    children: [],
+                },
             ],
         },
 
-        /* 2. MUTABBER ALI */
+        /* 2. mutabbar ALI */
         {
-            id: "sibling-mutabber-ali",
-            name: "Mutabber Ali",
-            image: DEFAULT_IMAGE,
+            id: "sibling-mutabbar-ali",
+            name: "Mutabbar Ali",
+            image: mutabbar_Profile,
             isMarried: true,
             personalInfo: {
                 dob: "1984-06-18",
@@ -230,7 +259,7 @@ export const family = {
                 about: "Hardworking and practical.",
             },
             spouse: {
-                name: "Mrs. Mutabber Ali",
+                name: "Mrs. mutabbar Ali",
                 image: DEFAULT_IMAGE,
                 personalInfo: {
                     dob: "1988-02-10",
@@ -258,8 +287,8 @@ export const family = {
                         dob: "2009-01-12",
                         bloodGroup: "B+",
                         education: "School",
-                        father: "Mutabber Ali",
-                        mother: "Mrs. Mutabber Ali",
+                        father: "mutabbar Ali",
+                        mother: "Mrs. mutabbar Ali",
                         occupation: "Student",
                         hobbies: ["Cricket"],
                         favoriteColor: "Blue",
@@ -280,8 +309,8 @@ export const family = {
                         dob: "2011-05-09",
                         bloodGroup: "O+",
                         education: "School",
-                        father: "Mutabber Ali",
-                        mother: "Mrs. Mutabber Ali",
+                        father: "mutabbar Ali",
+                        mother: "Mrs. mutabbar Ali",
                         occupation: "Student",
                         hobbies: ["Drawing"],
                         favoriteColor: "Pink",
@@ -302,8 +331,8 @@ export const family = {
                         dob: "2013-08-21",
                         bloodGroup: "A+",
                         education: "School",
-                        father: "Mutabber Ali",
-                        mother: "Mrs. Mutabber Ali",
+                        father: "mutabbar Ali",
+                        mother: "Mrs. mutabbar Ali",
                         occupation: "Student",
                         hobbies: ["Storytelling"],
                         favoriteColor: "Purple",
@@ -324,8 +353,8 @@ export const family = {
                         dob: "2016-11-03",
                         bloodGroup: "B+",
                         education: "School",
-                        father: "Mutabber Ali",
-                        mother: "Mrs. Mutabber Ali",
+                        father: "mutabbar Ali",
+                        mother: "Mrs. mutabbar Ali",
                         occupation: "Student",
                         hobbies: ["Playing"],
                         favoriteColor: "Red",
@@ -343,7 +372,7 @@ export const family = {
         {
             id: "sibling-mashuk-ali",
             name: "Mashuk Ali",
-            image: DEFAULT_IMAGE,
+            image: mashuk_Profile,
             isMarried: true,
             personalInfo: {
                 dob: "17-12-1984",
@@ -403,7 +432,7 @@ export const family = {
                 {
                     id: "child-shad-ali",
                     name: "Shad Ali",
-                    image: DEFAULT_IMAGE,
+                    image: shad_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -447,7 +476,7 @@ export const family = {
                 {
                     id: "child-tahira-siddiqui",
                     name: "Tahira Siddiqui",
-                    image: DEFAULT_IMAGE,
+                    image: tahira_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -473,7 +502,7 @@ export const family = {
         {
             id: "sibling-washuk-ali",
             name: "Washuk Ali",
-            image: DEFAULT_IMAGE,
+            image: washuk_Profile,
             isMarried: true,
             personalInfo: {
                 dob: "01-01-1981",
@@ -603,7 +632,7 @@ export const family = {
         {
             id: "sibling-kaisar-ali",
             name: "Kaisar Ali",
-            image: DEFAULT_IMAGE,
+            image: "",
             isMarried: true,
             personalInfo: {
                 dob: "",
@@ -640,14 +669,14 @@ export const family = {
             children: [
                 {
                     id: "child-aman",
-                    name: "Aman",
-                    image: DEFAULT_IMAGE,
+                    name: "Siftain Raza (Aman)",
+                    image: aman_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
                         dob: "13-10-2005",
                         bloodGroup: "B+",
-                        education: "School",
+                        education: "Work",
                         father: "Kaisar Ali",
                         mother: "Trannum Praveen",
                         occupation: "Graduate",
@@ -668,7 +697,7 @@ export const family = {
                     personalInfo: {
                         dob: "14-03-2003",
                         bloodGroup: "A+",
-                        education: "School",
+                        education: "Graduate",
                         father: "Kaisar Ali",
                         mother: "Trannum Praveen",
                         occupation: "HomeMaker",
@@ -682,7 +711,7 @@ export const family = {
                     children: [],
                     spouse: {
                         name: "Asif Raza",
-                        image: DEFAULT_IMAGE,
+                        image: asif_Profile,
                         personalInfo: {
                             dob: "",
                             bloodGroup: "",
@@ -706,7 +735,7 @@ export const family = {
         {
             id: "sibling-ahamad-raza",
             name: "Ahamad Raza",
-            image: DEFAULT_IMAGE,
+            image: ahamad_Profile,
             isMarried: true,
             personalInfo: {
                 dob: "",
@@ -837,7 +866,7 @@ export const family = {
         {
             id: "sibling-mohammad-raza",
             name: "Mohammad Raza",
-            image: DEFAULT_IMAGE,
+            image: raza_Profile,
             isMarried: false,
             spouse: null,
             personalInfo: {
@@ -880,7 +909,7 @@ export const family = {
             },
             spouse: {
                 name: "Wasim Khan",
-                image: DEFAULT_IMAGE,
+                image: wasim_Profile,
                 personalInfo: {
                     dob: "",
                     bloodGroup: "B+",
@@ -960,7 +989,7 @@ export const family = {
                 hobbies: ["Painting", "Cooking"],
                 favoriteColor: "Sky Blue",
                 favoriteFood: "Veg Biryani",
-                visitedPlaces: ["Ujjain"],
+                visitedPlaces: ["Jharkhand"],
                 phone: "9XXXXXXXXX",
                 about: "Soft-spoken and loving.",
             },
@@ -978,10 +1007,10 @@ export const family = {
                         father: "",
                         mother: "Noori Chaman",
                         occupation: "Student",
-                        hobbies: ["Playing","Drowing"],
+                        hobbies: ["Playing", "Drowing"],
                         favoriteColor: "Blue",
                         favoriteFood: "Milk",
-                        visitedPlaces: ["Ambikapur","Korba"],
+                        visitedPlaces: ["Ambikapur", "Korba"],
                         phone: "",
                         about: "Cute and playful.",
                     },
@@ -993,29 +1022,29 @@ export const family = {
         /* 10. DILRUBA */
         {
             id: "sibling-dilruba",
-            name: "Dilruba",
+            name: "Dilruba Khatun",
             image: Image6,
             isMarried: true,
             personalInfo: {
-                dob: "2000-02-02",
+                dob: "01-01-1983",
                 bloodGroup: "A+",
-                education: "Graduate",
+                education: "School pass",
                 father: "Shaikh Ali Ullah",
                 mother: "Sadrun Nisha",
                 occupation: "Homemaker",
                 hobbies: ["Singing", "Decorating", "Home Management"],
                 favoriteColor: "Red",
-                favoriteFood: "Noodles",
-                visitedPlaces: ["Bhopal", "Indore"],
+                favoriteFood: "Rice",
+                visitedPlaces: ["Chattishgarh", "Jharkhand"],
                 phone: "9XXXXXXXXX",
                 about: "Cheerful, artistic, and very caring by nature. Brings positivity to the family.",
             },
 
             spouse: {
-                name: "Mr. Dilruba",
-                image: DEFAULT_IMAGE,
+                name: "Shaikh Suhail Ahamad",
+                image: suhail_Profile,
                 personalInfo: {
-                    dob: "1997-06-19",
+                    dob: "01-01-1981",
                     bloodGroup: "B+",
                     education: "Graduate",
                     father: "Mohammad Shahid",
@@ -1031,63 +1060,41 @@ export const family = {
             },
 
             children: [
-                {
-                    id: "child-dilruba-tahsin-raza",
-                    name: "Tahsin Raza",
-                    image: DEFAULT_IMAGE,
-                    isMarried: false,
-                    spouse: null,
-                    personalInfo: {
-                        dob: "2018-09-12",
-                        bloodGroup: "O+",
-                        education: "School",
-                        father: "Mr. Dilruba",
-                        mother: "Dilruba",
-                        occupation: "Student",
-                        hobbies: ["Drawing", "Playing"],
-                        favoriteColor: "Blue",
-                        favoriteFood: "Rice",
-                        visitedPlaces: ["Bhopal"],
-                        phone: "",
-                        about: "Smart, active, and curious child.",
-                    },
-                    children: [],
-                },
 
                 {
                     id: "child-dilruba-mosahid-raza",
                     name: "Mosahid Raza",
-                    image: DEFAULT_IMAGE,
+                    image: mosahid_Profile,
                     isMarried: true,
                     personalInfo: {
-                        dob: "2020-05-14",
+                        dob: "12-08-1998",
                         bloodGroup: "O+",
-                        education: "School",
-                        father: "Mr. Dilruba",
-                        mother: "Dilruba",
-                        occupation: "Student",
+                        education: "Graduate",
+                        father: "Mr. Shaikh Suhail Ahamad",
+                        mother: "Dilruba Khatun",
+                        occupation: "Job",
                         hobbies: ["Drawing", "Playing with toys"],
                         favoriteColor: "Green",
-                        favoriteFood: "Milk",
-                        visitedPlaces: ["Bhopal"],
+                        favoriteFood: "Biryani",
+                        visitedPlaces: ["Delhi", "Saudi Arab", "Qatar", "Chhattishgarh"],
                         phone: "",
                         about: "Quiet, polite, and loving child.",
                     },
 
                     spouse: {
-                        name: "Ashma",
-                        image: DEFAULT_IMAGE,
+                        name: "Aasma Khatun",
+                        image: Image6,
                         personalInfo: {
                             dob: "2002-08-16",
                             bloodGroup: "A+",
-                            education: "Graduate",
-                            father: "Mohammad Aqeel",
+                            education: "",
+                            father: "",
                             mother: "Saima Khan",
                             occupation: "Private Job",
                             hobbies: ["Listening to Music", "Cooking"],
                             favoriteColor: "Pink",
                             favoriteFood: "Veg Curry",
-                            visitedPlaces: ["Bhopal"],
+                            visitedPlaces: ["JH"],
                             phone: "",
                             about: "Kind-hearted and supportive wife.",
                         },
@@ -1096,21 +1103,21 @@ export const family = {
                     children: [
                         {
                             id: "grandchild-mosahid-sara-ali",
-                            name: "Sara Ali",
-                            image: DEFAULT_IMAGE,
+                            name: "Mariyam Siddiqui",
+                            image: child1,
                             isMarried: false,
                             spouse: null,
                             personalInfo: {
-                                dob: "2022-03-10",
+                                dob: "02-01-2024",
                                 bloodGroup: "A+",
                                 education: "Playschool",
                                 father: "Mosahid Raza",
-                                mother: "Ashma",
+                                mother: "Aasma Khatun",
                                 occupation: "Child",
-                                hobbies: ["Coloring", "Dancing"],
-                                favoriteColor: "Pink",
+                                hobbies: ["Coloring", "Playing"],
+                                favoriteColor: "Blue",
                                 favoriteFood: "Milk",
-                                visitedPlaces: ["Bhopal"],
+                                visitedPlaces: ["JH"],
                                 phone: "",
                                 about: "Cheerful and playful little girl.",
                             },
@@ -1119,21 +1126,21 @@ export const family = {
 
                         {
                             id: "grandchild-mosahid-noor-jahan",
-                            name: "Noor Jahan",
+                            name: "Mohammad Adib",
                             image: DEFAULT_IMAGE,
                             isMarried: false,
                             spouse: null,
                             personalInfo: {
-                                dob: "2023-11-05",
+                                dob: "28-11-2025",
                                 bloodGroup: "B+",
                                 education: "Playschool",
                                 father: "Mosahid Raza",
-                                mother: "Ashma",
+                                mother: "Aasma khatun",
                                 occupation: "Child",
                                 hobbies: ["Playing with toys"],
                                 favoriteColor: "Yellow",
                                 favoriteFood: "Milk",
-                                visitedPlaces: ["Bhopal"],
+                                visitedPlaces: ["JH"],
                                 phone: "",
                                 about: "Youngest joy of the family.",
                             },
@@ -1143,67 +1150,51 @@ export const family = {
                 },
 
                 {
-                    id: "child-dilruba-jugnu",
-                    name: "Jugnu",
-                    image: DEFAULT_IMAGE,
-                    isMarried: true,
+                    id: "child-dilruba-tahsin-raza",
+                    name: "Tahsin Raza",
+                    image: tahsin_Profile,
+                    isMarried: false,
+                    spouse: null,
                     personalInfo: {
-                        dob: "2021-07-08",
-                        bloodGroup: "B+",
-                        education: "Playschool",
-                        father: "Mr. Dilruba",
-                        mother: "Dilruba",
-                        occupation: "HomeMaker",
-                        hobbies: ["Singing rhymes"],
-                        favoriteColor: "Yellow",
-                        favoriteFood: "Milk",
-                        visitedPlaces: ["Bhopal"],
+                        dob: "07-06-1999",
+                        bloodGroup: "O+",
+                        education: "B.Tech",
+                        father: "Shaikh Suhail Ahamad",
+                        mother: "Dilruba Khatun",
+                        occupation: "Mechanical Engineer",
+                        hobbies: ["Drawing", "Playing"],
+                        favoriteColor: "Blue",
+                        favoriteFood: "Rice",
+                        visitedPlaces: ["Pune", "Mumbai", "Bhopal", "Chattishgarh"],
                         phone: "",
-                        about: "Joyful and energetic.",
+                        about: "Smart, active, and curious child.",
                     },
                     children: [],
-                    spouse: {
-                        name: "Mr. Jugnu",
-                        image: DEFAULT_IMAGE,
-                        personalInfo: {
-                            dob: "1998-04-25",
-                            bloodGroup: "O+",
-                            education: "Graduate",
-                            father: "Mohammad Rizwan",
-                            mother: "Sabiha Khan",
-                            occupation: "Private Job",
-                            hobbies: ["Sports", "Music"],
-                            favoriteColor: "Blue",
-                            favoriteFood: "Paneer Butter Masala",
-                            visitedPlaces: ["Bhopal", "Indore"],
-                            phone: "",
-                            about: "Supportive and kind-hearted.",
-                        },
-                    },
                 },
+
 
                 {
                     id: "child-dilruba-nausin",
-                    name: "Nausin",
-                    image: DEFAULT_IMAGE,
-                    isMarried: false,
+                    name: "Nausin Ladli",
+                    image: Image6,
+                    isMarried: true,
                     personalInfo: {
-                        dob: "2023-01-18",
+                        dob: "10-05-2000",
                         bloodGroup: "B+",
-                        education: "Playschool",
-                        father: "Mr. Dilruba",
-                        mother: "Dilruba",
-                        occupation: "Child",
-                        hobbies: ["Playing"],
-                        favoriteColor: "Pink",
-                        favoriteFood: "Milk",
-                        visitedPlaces: ["Bhopal"],
+                        education: "Gradute",
+                        father: "Shaikh Suhail Ahamad",
+                        mother: "Dilruba Khatun",
+                        occupation: "HomeMaker",
+                        hobbies: ["Playing", "Reading"],
+                        favoriteColor: "Purple",
+                        favoriteFood: "Biryani",
+                        visitedPlaces: ["JH", "CG", "UP"],
                         phone: "",
                         about: "Playful and adorable.",
                     },
                     spouse: {
-                        name: "Mrs. Nausin",
-                        image: DEFAULT_IMAGE,
+                        name: "Anwar khan",
+                        image: anwar_Profile,
                         personalInfo: {
                             dob: "1999-11-30",
                             bloodGroup: "A+",
@@ -1222,21 +1213,21 @@ export const family = {
                     children: [
                         {
                             id: "grandchild-nausin-areeb",
-                            name: "Areeb",
+                            name: "Arshlan khan",
                             image: DEFAULT_IMAGE,
                             isMarried: true,
                             spouse: null,
                             personalInfo: {
-                                dob: "2024-06-01",
+                                dob: "21-08-2025",
                                 bloodGroup: "O+",
                                 education: "Infant",
-                                father: "Nausin",
-                                mother: "Mrs. Nausin",
+                                father: "Anwar khan",
+                                mother: "Mrs. Nausin Ladli",
                                 occupation: "Child",
                                 hobbies: ["Smiling"],
                                 favoriteColor: "Blue",
                                 favoriteFood: "Milk",
-                                visitedPlaces: ["Bhopal"],
+                                visitedPlaces: ["JH"],
                                 phone: "",
                                 about: "Happy and calm baby.",
                             },
@@ -1244,21 +1235,21 @@ export const family = {
                         },
                         {
                             id: "grandchild-nausin-zoya",
-                            name: "Zoya",
+                            name: "Azlan khan",
                             image: DEFAULT_IMAGE,
                             isMarried: false,
                             spouse: null,
                             personalInfo: {
-                                dob: "2025-01-15",
+                                dob: "26-02-2024",
                                 bloodGroup: "A+",
                                 education: "Infant",
-                                father: "Nausin",
-                                mother: "Mrs. Nausin",
+                                father: "Anwar khan",
+                                mother: "Nausin Ladli",
                                 occupation: "Child",
                                 hobbies: ["Sleeping"],
                                 favoriteColor: "Pink",
                                 favoriteFood: "Milk",
-                                visitedPlaces: ["Bhopal"],
+                                visitedPlaces: ["Jh"],
                                 phone: "",
                                 about: "Newest blessing of the family.",
                             },
@@ -1266,6 +1257,48 @@ export const family = {
                         },
                     ],
                 },
+
+                {
+                    id: "child-dilruba-jugnu",
+                    name: "Jugnu Vahdat",
+                    image: jugnu_Profile,
+                    isMarried: true,
+                    personalInfo: {
+                        dob: "25-04-2003",
+                        bloodGroup: "B+",
+                        education: "Graduate",
+                        father: "Shaikh Suhail Ahamad",
+                        mother: "Dilruba Khatun",
+                        occupation: "HomeMaker",
+                        hobbies: [""],
+                        favoriteColor: "Yellow",
+                        favoriteFood: "Milk",
+                        visitedPlaces: ["Aurangabad", "JH", "CG"],
+                        phone: "",
+                        about: "Joyful and energetic.",
+                    },
+                    children: [],
+                    spouse: {
+                        name: "Mohammad Zeeshan Khan",
+                        image: zeeshan_Profile,
+                        personalInfo: {
+                            dob: "1998-04-25",
+                            bloodGroup: "O+",
+                            education: "Graduate",
+                            father: "Mohammad Rizwan",
+                            mother: "Sabiha Khan",
+                            occupation: "Private Job",
+                            hobbies: ["Sports", "Music"],
+                            favoriteColor: "Blue",
+                            favoriteFood: "Paneer Butter Masala",
+                            visitedPlaces: ["Bhopal", "Indore"],
+                            phone: "",
+                            about: "Supportive and kind-hearted.",
+                        },
+                    },
+                },
+
+
             ],
         },
 
@@ -1276,24 +1309,25 @@ export const family = {
             image: Image6,
             isMarried: true,
             personalInfo: {
-                dob: "2003-07-30",
+                dob: "--",
                 bloodGroup: "O+",
                 education: "Graduate",
                 father: "Shaikh Ali Ullah",
                 mother: "Sadrun Nisha",
-                occupation: "Student",
-                hobbies: ["Writing", "Art"],
+                occupation: "HomeMaker",
+                hobbies: ["Cooking", "Reading"],
                 favoriteColor: "Yellow",
-                favoriteFood: "Sandwich",
-                visitedPlaces: ["Bhopal"],
+                favoriteFood: "Pulao",
+                visitedPlaces: ["Mumbai", "Delhi", "JH"],
                 phone: "9XXXXXXXXX",
                 about: "Youngest sibling, creative and ambitious.",
             },
+
             spouse: {
-                name: "Mr. Mahelaka",
-                image: DEFAULT_IMAGE,
+                name: "Rahat Hussain",
+                image: rahat_Profile,
                 personalInfo: {
-                    dob: "2001-11-22",
+                    dob: "--",
                     bloodGroup: "B+",
                     education: "Graduate",
                     father: "Mohammad Saif",
@@ -1443,7 +1477,7 @@ export const familyGallery = {
                 { id: "func-7", type: "image", src: function6, title: "Special Occasion", year: 2022 },
                 { id: "func-8", type: "image", src: function7, title: "Memorable Day", year: 2022 },
                 { id: "func-9", type: "image", src: function8, title: "Memorable Day", year: 2022 },
-                { id: "func-3", type: "video", src: video2, title: "Nikah Ceremony", year: 2022 },
+                // { id: "func-3", type: "video", src: video2, title: "Nikah Ceremony", year: 2022 },
             ],
         },
 
@@ -1460,8 +1494,8 @@ export const familyGallery = {
                 { id: "all-6", type: "image", src: All6, title: "Moments", year: 2020 },
                 { id: "all-7", type: "image", src: All7, title: "Moments", year: 2020 },
                 { id: "all-8", type: "image", src: All8, title: "Moments", year: 2020 },
-                { id: "all-9", type: "video", src: video1, title: "Funny", year: 2022 },
-                { id: "all-11", type: "video", src: video4, title: "Taj-ul Bhopal", year: 2022 },
+                // { id: "all-9", type: "video", src: video1, title: "Funny", year: 2022 },
+                // { id: "all-11", type: "video", src: video4, title: "Taj-ul Bhopal", year: 2022 },
 
             ],
         },
@@ -1494,7 +1528,7 @@ export const familyGallery = {
                 { id: "child-20", type: "image", src: children20, title: "Smile Shot" },
                 { id: "child-21", type: "image", src: children21, title: "Playful Mood" },
                 { id: "child-22", type: "image", src: children22, title: "Memory" },
-                { id: "child-23", type: "video", src: video3, title: "Arif Raza", year: 2022 },
+                // { id: "child-23", type: "video", src: video3, title: "Arif Raza", year: 2022 },
             ],
         },
     ],
@@ -1511,10 +1545,10 @@ export const familyGallery = {
         },
 
         {
-            memberId: "sibling-mutabber-ali",
-            memberName: "Mutabber Ali",
+            memberId: "sibling-mutabbar-ali",
+            memberName: "mutabbar Ali",
             media: [
-                { id: "mutabber-1", type: "image", src: "/images/image-6.png", title: "Shop Opening" },
+                { id: "mutabbar-1", type: "image", src: "/images/image-6.png", title: "Shop Opening" },
             ],
         },
 
@@ -1523,7 +1557,7 @@ export const familyGallery = {
             memberName: "Mohammad Raza",
             media: [
                 { id: "raza-1", type: "image", src: "/images/image-6.png", title: "Work Setup" },
-                { id: "raza-2", type: "video", src: "/gallery/video/eid.mp4", title: "Coding Time" },
+                // { id: "raza-2", type: "video", src: "/gallery/video/eid.mp4", title: "Coding Time" },
             ],
         },
 
@@ -1546,3 +1580,9 @@ export const familyGallery = {
 };
 
 
+
+
+
+// git lfs track "*.mp4"
+// git add.gitattributes
+// git commit - m "Track mp4 with LFS"

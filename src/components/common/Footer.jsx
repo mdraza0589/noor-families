@@ -2,10 +2,18 @@ import { family } from "../../data/familyData";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
+
+const mutabbar_Profile = '/gallery/profileImage/mutabbar.jpg'
+const raza_Profile = '/gallery/profileImage/raza.jpg'
+const abba_Profile = '/images/abba.jpg'
+
+
 const Footer = () => {
   const footerRef = useRef(null);
   const linkRefs = useRef([]);
   const [isMobile, setIsMobile] = useState(false);
+
+
 
   useEffect(() => {
     // Check if mobile on mount and on resize
@@ -491,7 +499,7 @@ const Footer = () => {
           {/* Members Links in Columns */}
           <div className="mb-8">
             <h3 className="text-center text-lg font-semibold mb-6 text-gray-300">
-              All Family Members 
+              All Family Members
             </h3>
 
             <div className="members-columns-container">
@@ -579,7 +587,7 @@ const Footer = () => {
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300 flex items-center justify-center group border border-gray-700 relative overflow-hidden"
                 aria-label="Share family page"
                 style={{
-                  backgroundImage: 'url(https://cdn.pixabay.com/photo/2020/07/01/20/32/mountain-5360913_1280.jpg)',
+                  backgroundImage: `url(${raza_Profile})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
@@ -594,7 +602,7 @@ const Footer = () => {
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300 flex items-center justify-center group border border-gray-700 relative overflow-hidden"
                 aria-label="Print family tree"
                 style={{
-                  backgroundImage: 'url(https://cdn.pixabay.com/photo/2020/07/01/20/32/mountain-5360913_1280.jpg)',
+                  backgroundImage: `url(${abba_Profile})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
@@ -609,7 +617,7 @@ const Footer = () => {
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300 flex items-center justify-center group border border-gray-700 relative overflow-hidden"
                 aria-label="Download family info"
                 style={{
-                  backgroundImage: 'url(https://cdn.pixabay.com/photo/2020/07/01/20/32/mountain-5360913_1280.jpg)',
+                  backgroundImage: `url(${mutabbar_Profile})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}

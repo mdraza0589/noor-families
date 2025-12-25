@@ -231,6 +231,19 @@ const ProfilePage = () => {
                     </div>
                 </section>
             )}
+            <div className="flex justify-center my-4">
+                <button
+                    onClick={() => navigate("/family-gallery")}
+                    className="
+                px-8 py-4 rounded-full
+                bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
+                text-white font-semibold text-lg
+                shadow-lg hover:scale-105 transition
+                "
+                >
+                    See Family Photos
+                </button>
+            </div>
 
             <Footer />
         </>

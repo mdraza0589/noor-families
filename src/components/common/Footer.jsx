@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 
 const mutabbar_Profile = '/gallery/profileImage/mutabbar.jpg'
-const raza_Profile = '/gallery/profileImage/raza.jpg'
+const raza_Profile = '/gallery/profileImage/raza1.png'
 const abba_Profile = '/images/abba.jpg'
 
 

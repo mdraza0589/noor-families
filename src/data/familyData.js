@@ -33,6 +33,8 @@ const rahat_Profile = '/gallery/profileImage/rahat.png'
 const aman_Profile = '/gallery/profileImage/aman.png'
 const asif_Profile = '/gallery/profileImage/asif.png'
 const kaiser_Profile = '/gallery/profileImage/kaisar.png'
+const arif_Profile = '/gallery/profileImage/arif1.jpg'
+const arhan_Profile = '/gallery/profileImage/arhan.jpeg'
 
 
 
@@ -775,7 +777,7 @@ export const family = {
             children: [
                 {
                     id: "child-ahad",
-                    name: "Ahad",
+                    name: "Ahad Raza",
                     image: DEFAULT_IMAGE,
                     isMarried: false,
                     spouse: null,
@@ -797,7 +799,7 @@ export const family = {
                 },
                 {
                     id: "child-samad",
-                    name: "Samad",
+                    name: "Qasim Raza (Sahad)",
                     image: DEFAULT_IMAGE,
                     isMarried: false,
                     spouse: null,
@@ -819,8 +821,8 @@ export const family = {
                 },
                 {
                     id: "child-akif",
-                    name: "Akif",
-                    image: DEFAULT_IMAGE,
+                    name: "Arif Raza",
+                    image: arif_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -839,9 +841,10 @@ export const family = {
                     },
                     children: []
                 },
+                
                 {
                     id: "child-taiyab",
-                    name: "Taiyab",
+                    name: "Tohid Raza",
                     image: DEFAULT_IMAGE,
                     isMarried: false,
                     spouse: null,
@@ -1259,7 +1262,7 @@ export const family = {
                 {
                     id: "child-fiza-bano",
                     name: "Fiza Bano",
-                    image: DEFAULT_IMAGE,
+                    image: Image6,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -1327,7 +1330,7 @@ export const family = {
                 {
                     id: "child-arhan-khan",
                     name: "Arhan Khan",
-                    image: DEFAULT_IMAGE,
+                    image: arhan_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {

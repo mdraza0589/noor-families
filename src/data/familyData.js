@@ -481,11 +481,11 @@ export const family = {
             personalInfo: {
                 dob: "01-01-1981",
                 bloodGroup: "B+",
-                education: "Schooling",
+                education: "School Pass Out",
                 father: "Shaikh Ali Ullah",
                 mother: "Sadrun Nisha",
                 occupation: "Transport Manager",
-                hobbies: ["Drinving", "Walking"],
+                hobbies: ["Driving  ", "Walking"],
                 favoriteColor: "Navy Blue",
                 favoriteFood: "Chicken Curry",
                 visitedPlaces: ["Indore", "Bhilai", "Raipur", "Bilashpur"],
@@ -869,6 +869,7 @@ export const family = {
             id: "sibling-mohammad-raza",
             name: "Mohammad Raza",
             image: raza_Profile,
+            portfolio: "https://raza-portfolio-pink.vercel.app/",
             isMarried: false,
             spouse: null,
             personalInfo: {
@@ -1051,7 +1052,7 @@ export const family = {
                     personalInfo: {
                         dob: "10-05-2000",
                         bloodGroup: "B+",
-                        education: "Gradute",
+                        education: "Graduate",
                         father: "Shaikh Suhail Ahamad",
                         mother: "Dilruba Khatun",
                         occupation: "HomeMaker",
@@ -1315,7 +1316,7 @@ export const family = {
                         father: "",
                         mother: "Noori Chaman",
                         occupation: "Student",
-                        hobbies: ["Playing", "Drowing"],
+                        hobbies: ["Playing", "Drawing"],
                         favoriteColor: "Blue",
                         favoriteFood: "Milk",
                         visitedPlaces: ["Ambikapur", "Korba"],
@@ -1582,10 +1583,3 @@ export const familyGallery = {
     ],
 };
 
-
-
-
-
-// git lfs track "*.mp4"
-// git add.gitattributes
-// git commit - m "Track mp4 with LFS"

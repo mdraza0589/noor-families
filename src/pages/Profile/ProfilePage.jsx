@@ -60,7 +60,7 @@ const ProfilePage = () => {
                         <img
                             src={member.image}
                             alt={member.name}
-                            className="w-24 h-24 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-white/20"
+                            className="w-60 h-60 sm:w-40 sm:h-40 rounded-4xl object-cover border-4 border-white/20"
                         />
 
                         <div className="text-center sm:text-left">

@@ -30,6 +30,19 @@ const ProfilePage = () => {
 
     return (
         <>
+            {/* ✅ ANIMATION FIX (SAME AS MEMBERS PAGE) */}
+            <style>
+                {`
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(30px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                .animate-fadeIn {
+                    animation: fadeIn 0.8s ease-out forwards;
+                }
+                `}
+            </style>
+
             {/* Back Button */}
             <div className="fixed top-4 left-4 z-50">
                 <button
@@ -69,6 +82,7 @@ const ProfilePage = () => {
                         </div>
                     </div>
                 </div>
+
                 {member.portfolio && (
                     <div className="mt-3 text-center sm:text-left">
                         <a
@@ -81,13 +95,13 @@ const ProfilePage = () => {
                                 bg-indigo-600/20 text-indigo-300
                                 hover:bg-indigo-600/30 hover:text-indigo-200
                                 transition text-sm font-medium
-                            ">
+                            "
+                        >
                             <span>View Portfolio</span>
                             <span>🔗</span>
                         </a>
                     </div>
                 )}
-
             </section>
 
             {/* Personal Information */}
@@ -98,42 +112,32 @@ const ProfilePage = () => {
                     </h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-
                         {info.father && (
                             <InfoRow label="Father's Name" value={info.father} icon="😊" />
                         )}
-
                         {info.mother && (
                             <InfoRow label="Mother's Name" value={info.mother} icon="🙌" />
                         )}
-
                         {info.dob && (
                             <InfoRow label="Date of Birth" value={info.dob} icon="🎂" />
                         )}
-
                         {info.bloodGroup && (
                             <InfoRow label="Blood Group" value={info.bloodGroup} icon="🩸" />
                         )}
-
                         {info.education && (
                             <InfoRow label="Education" value={info.education} icon="🎓" />
                         )}
-
                         {info.occupation && (
                             <InfoRow label="Occupation" value={info.occupation} icon="💼" />
                         )}
-
                         {info.favoriteColor && (
                             <InfoRow label="Favorite Color" value={info.favoriteColor} icon="🎨" />
                         )}
-
                         {info.favoriteFood && (
                             <InfoRow label="Favorite Food" value={info.favoriteFood} icon="🍽️" />
                         )}
                     </div>
 
-                    {/* Hobbies */}
                     {info.hobbies?.length > 0 && (
                         <div className="mt-10 bg-white/5 p-6 rounded-xl">
                             <h3 className="text-xl font-semibold mb-4 text-white">
@@ -152,7 +156,6 @@ const ProfilePage = () => {
                         </div>
                     )}
 
-                    {/* Visited Places */}
                     {info.visitedPlaces?.length > 0 && (
                         <div className="mt-10 bg-white/5 p-6 rounded-xl">
                             <h3 className="text-xl font-semibold mb-4 text-white">
@@ -171,7 +174,6 @@ const ProfilePage = () => {
                         </div>
                     )}
 
-                    {/* About */}
                     {info.about && (
                         <div className="mt-10 bg-gradient-to-r from-indigo-900/40 to-purple-900/40 p-6 rounded-xl border border-white/10">
                             <h3 className="text-xl font-semibold mb-3 text-white">
@@ -194,6 +196,7 @@ const ProfilePage = () => {
                         </h2>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 bg-white rounded-2xl shadow-lg p-6 sm:p-10">
+                            {/* Husband / Wife */}
                             <div className="text-center">
                                 <img
                                     src={member.image}
@@ -205,6 +208,7 @@ const ProfilePage = () => {
 
                             <div className="text-3xl text-pink-500 font-bold">And</div>
 
+                            {/* Spouse */}
                             <div className="text-center">
                                 <img
                                     src={member.spouse.image}
@@ -219,6 +223,7 @@ const ProfilePage = () => {
                     </div>
                 </section>
             )}
+
 
             {/* Children */}
             {member.children?.length > 0 && (
@@ -250,18 +255,29 @@ const ProfilePage = () => {
                     </div>
                 </section>
             )}
-            <div className="flex justify-center my-4">
+
+            {/* ✅ SEE FAMILY PHOTOS (NOW WORKS) */}
+            <div
+                className="mt-4 text-center flex flex-col justify-center items-center animate-fadeIn opacity-0 py-4"
+                style={{ animationDelay: "800ms" }}
+            >
                 <button
                     onClick={() => navigate("/family-gallery")}
                     className="
-                px-8 py-4 rounded-full
-                bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
-                text-white font-semibold text-lg
-                shadow-lg hover:scale-105 transition
-                "
+                        px-8 py-4 rounded-full
+                        bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
+                        text-white font-semibold text-lg
+                        shadow-lg hover:scale-105 transition cursor-pointer
+                    "
                 >
                     See Family Photos
                 </button>
+
+                <div className="mt-6 inline-flex items-center space-x-4 text-gray-500">
+                    <div className="h-px w-12 bg-gradient-to-r from-transparent to-gray-400"></div>
+                    <span className="text-sm">Family • Together</span>
+                    <div className="h-px w-12 bg-gradient-to-r from-gray-400 to-transparent"></div>
+                </div>
             </div>
 
             <Footer />

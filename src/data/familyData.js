@@ -33,10 +33,11 @@ const rahat_Profile = '/gallery/profileImage/rahat.png'
 const aman_Profile = '/gallery/profileImage/aman.png'
 const asif_Profile = '/gallery/profileImage/asif.png'
 const kaiser_Profile = '/gallery/profileImage/kaisar.png'
-const arif_Profile = '/gallery/profileImage/arif1.jpg'
 const arhan_Profile = '/gallery/profileImage/arhan.jpeg'
-
-
+const arif_Profile = '/gallery/profileImage/arif.jpg'
+const sahad_Profile = '/gallery/profileImage/sahad.jpg'
+const ahad_Profile = '/gallery/profileImage/ahad.jpg'
+const taslim_Profile = '/gallery/profileImage/taslim.jpg'
 
 
 export const family = {
@@ -626,7 +627,7 @@ export const family = {
             },
             spouse: {
                 name: "Taiba Khatun",
-                image: DEFAULT_IMAGE,
+                image: Image1,
                 personalInfo: {
                     dob: "29-05-1989",
                     bloodGroup: "A+",
@@ -778,20 +779,20 @@ export const family = {
                 {
                     id: "child-ahad",
                     name: "Ahad Raza",
-                    image: DEFAULT_IMAGE,
+                    image: ahad_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "2016-04-09",
+                        dob: "-- -- ----",
                         bloodGroup: "B+",
                         education: "School",
                         father: "Ahamad Raza",
-                        mother: "Mrs. Ahamad Raza",
+                        mother: "Sahana Khatun",
                         occupation: "Student",
                         hobbies: ["Cricket"],
                         favoriteColor: "Blue",
                         favoriteFood: "Rice",
-                        visitedPlaces: ["Bhopal"],
+                        visitedPlaces: ["Lakhanpur"],
                         phone: "",
                         about: "Active and confident."
                     },
@@ -800,20 +801,20 @@ export const family = {
                 {
                     id: "child-samad",
                     name: "Qasim Raza (Sahad)",
-                    image: DEFAULT_IMAGE,
+                    image: sahad_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "2018-07-12",
+                        dob: "-- -- ----",
                         bloodGroup: "O+",
                         education: "School",
                         father: "Ahamad Raza",
-                        mother: "Mrs. Ahamad Raza",
+                        mother: "Sahana Khatun",
                         occupation: "Student",
                         hobbies: ["Drawing"],
                         favoriteColor: "Green",
                         favoriteFood: "Milk",
-                        visitedPlaces: ["Bhopal"],
+                        visitedPlaces: ["Lakhanpur"],
                         phone: "",
                         about: "Calm and creative."
                     },
@@ -826,39 +827,38 @@ export const family = {
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "2020-01-20",
+                        dob: "-- -- ----",
                         bloodGroup: "A+",
                         education: "School",
                         father: "Ahamad Raza",
-                        mother: "Mrs. Ahamad Raza",
+                        mother: "Sahana Khatun",
                         occupation: "Student",
                         hobbies: ["Playing"],
                         favoriteColor: "Red",
                         favoriteFood: "Biscuits",
-                        visitedPlaces: ["Bhopal"],
+                        visitedPlaces: ["Lakhanpur"],
                         phone: "",
                         about: "Playful and cheerful."
                     },
                     children: []
                 },
-                
                 {
                     id: "child-taiyab",
-                    name: "Tohid Raza",
+                    name: "Tauheed Raza",
                     image: DEFAULT_IMAGE,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "2022-09-02",
+                        dob: "-- -- ----",
                         bloodGroup: "B+",
                         education: "School",
                         father: "Ahamad Raza",
-                        mother: "Mrs. Ahamad Raza",
+                        mother: "Sahana Khatun",
                         occupation: "Student",
                         hobbies: ["Toys"],
                         favoriteColor: "Yellow",
                         favoriteFood: "Milk",
-                        visitedPlaces: ["Bhopal"],
+                        visitedPlaces: ["Lakhanpur"],
                         phone: "",
                         about: "Youngest and adorable."
                     },
@@ -1204,7 +1204,7 @@ export const family = {
             image: Image6,
             isMarried: true,
             personalInfo: {
-                dob: "--",
+                dob: "-- -- ----",
                 bloodGroup: "O+",
                 education: "Graduate",
                 father: "Shaikh Ali Ullah",
@@ -1217,7 +1217,6 @@ export const family = {
                 phone: "9XXXXXXXXX",
                 about: "Youngest sibling, creative and ambitious.",
             },
-
             spouse: {
                 name: "Rahat Hussain",
                 image: rahat_Profile,
@@ -1244,7 +1243,7 @@ export const family = {
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "2020-04-12",
+                        dob: "-- -- ----",
                         bloodGroup: "B+",
                         education: "School",
                         father: "Mr. Mahelaka",
@@ -1266,7 +1265,7 @@ export const family = {
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "2022-06-18",
+                        dob: "-- -- ----",
                         bloodGroup: "O+",
                         education: "School",
                         father: "Mr. Mahelaka",
@@ -1284,11 +1283,11 @@ export const family = {
                 {
                     id: "child-taslim-raza",
                     name: "Taslim Raza",
-                    image: DEFAULT_IMAGE,
+                    image: taslim_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "2023-10-01",
+                        dob: "-- -- ----",
                         bloodGroup: "A+",
                         education: "School",
                         father: "Mr. Mahelaka",
@@ -1460,7 +1459,7 @@ const children5 = "/gallery/child/child4.jpg";
 const children6 = "/gallery/child/child5.jpg";
 const children7 = "/gallery/child/child6.jpg";
 const children8 = "/gallery/child/child7.jpg";
-const children9 = "/gallery/child/child8.jpg";
+const children9 = "/gallery/child/child23.jpg";
 const children10 = "/gallery/child/child9.jpg";
 const children11 = "/gallery/child/child10.jpg";
 const children12 = "/gallery/child/child11.jpg";
@@ -1474,6 +1473,7 @@ const children19 = "/gallery/child/child18.jpg";
 const children20 = "/gallery/child/child19.jpg";
 const children21 = "/gallery/child/child20.jpg";
 const children22 = "/gallery/child/child21.jpg";
+const children23 = "/gallery/child/child23.jpg";
 
 const function1 = "/gallery/functions/func1.jpg";
 const function2 = "/gallery/functions/func2.jpg";
@@ -1556,6 +1556,7 @@ export const familyGallery = {
                 { id: "child-20", type: "image", src: children20, title: "Smile Shot" },
                 { id: "child-21", type: "image", src: children21, title: "Playful Mood" },
                 { id: "child-22", type: "image", src: children22, title: "Memory" },
+                { id: "child-23", type: "image", src: children23, title: "Sarbhoka Dam" },
                 // { id: "child-23", type: "video", src: video3, title: "Arif Raza", year: 2022 },
             ],
         },

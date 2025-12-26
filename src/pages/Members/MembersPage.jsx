@@ -137,7 +137,7 @@ const MembersPage = () => {
 
           {/* ✅ FIXED BUTTON (NO DESIGN CHANGE, ONLY LOGIC ADDED) */}
           <div
-            className="mt-16 text-center animate-fadeIn opacity-0"
+            className="mt-16 text-center flex flex-col justify-center items-center animate-fadeIn opacity-0"
             style={{ animationDelay: "800ms" }}
           >
             <button
@@ -146,7 +146,7 @@ const MembersPage = () => {
                 px-8 py-4 rounded-full
                 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
                 text-white font-semibold text-lg
-                shadow-lg hover:scale-105 transition
+                shadow-lg hover:scale-105 transition cursor-pointer
               "
             >
               See Family Photos
@@ -154,9 +154,10 @@ const MembersPage = () => {
 
             <div className="mt-6 inline-flex items-center space-x-4 text-gray-500">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-gray-400"></div>
-              <span className="text-sm">Family • Love • Together</span>
+              <span className="text-sm">Family • Together</span>
               <div className="h-px w-12 bg-gradient-to-r from-gray-400 to-transparent"></div>
             </div>
+
           </div>
 
         </div>

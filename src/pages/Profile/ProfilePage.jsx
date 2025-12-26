@@ -69,6 +69,25 @@ const ProfilePage = () => {
                         </div>
                     </div>
                 </div>
+                {member.portfolio && (
+                    <div className="mt-3 text-center sm:text-left">
+                        <a
+                            href={member.portfolio}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                inline-flex items-center gap-2
+                                px-4 py-2 rounded-full
+                                bg-indigo-600/20 text-indigo-300
+                                hover:bg-indigo-600/30 hover:text-indigo-200
+                                transition text-sm font-medium
+                            ">
+                            <span>View Portfolio</span>
+                            <span>🔗</span>
+                        </a>
+                    </div>
+                )}
+
             </section>
 
             {/* Personal Information */}

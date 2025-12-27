@@ -1450,6 +1450,7 @@ const All5 = "/gallery/All/raza1.jpg";
 const All6 = "/gallery/All/raza2.jpg";
 const All7 = "/gallery/All/amritdhara1.jpg";
 const All8 = "/gallery/All/bhopal1.jpg";
+const All9 = "/gallery/All/aizah.jpeg";
 
 const children1 = "/gallery/child/child.jpg";
 const children2 = "/gallery/child/child1.jpg";
@@ -1474,6 +1475,7 @@ const children20 = "/gallery/child/child19.jpg";
 const children21 = "/gallery/child/child20.jpg";
 const children22 = "/gallery/child/child21.jpg";
 const children23 = "/gallery/child/child23.jpg";
+const children24 = "/gallery/child/child24.jpeg";
 
 const function1 = "/gallery/functions/func1.jpg";
 const function2 = "/gallery/functions/func2.jpg";
@@ -1522,9 +1524,9 @@ export const familyGallery = {
                 { id: "all-6", type: "image", src: All6, title: "Moments", year: 2020 },
                 { id: "all-7", type: "image", src: All7, title: "Moments", year: 2020 },
                 { id: "all-8", type: "image", src: All8, title: "Moments", year: 2020 },
+                { id: "all-9", type: "image", src: All9, title: "Aizah(Sadaf)", year: 2020 },
                 // { id: "all-9", type: "video", src: video1, title: "Funny", year: 2022 },
                 // { id: "all-11", type: "video", src: video4, title: "Taj-ul Bhopal", year: 2022 },
-
             ],
         },
 
@@ -1557,6 +1559,7 @@ export const familyGallery = {
                 { id: "child-21", type: "image", src: children21, title: "Playful Mood" },
                 { id: "child-22", type: "image", src: children22, title: "Memory" },
                 { id: "child-23", type: "image", src: children23, title: "Sarbhoka Dam" },
+                { id: "child-24", type: "image", src: children24, title: "Aizah(Sadaf)" },
                 // { id: "child-23", type: "video", src: video3, title: "Arif Raza", year: 2022 },
             ],
         },

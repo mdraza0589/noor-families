@@ -137,7 +137,7 @@ const Footer = () => {
                       </div>
                       {member.parentName && (
                         <div className="text-xs text-gray-400">
-                          Child of {member.parentName}
+                          {member.parentName}
                         </div>
                       )}
                     </div>

@@ -21,6 +21,8 @@ const tahira_Profile = '/gallery/profileImage/tahira.jpg'
 const ahamad_Profile = '/gallery/profileImage/ahamad.png'
 const mashuk_Profile = '/gallery/profileImage/mashuk.jpg'
 const mutabbar_Profile = '/gallery/profileImage/mutabbar.jpeg'
+const arman_Profile = '/gallery/profileImage/arman.jpeg'
+const kadir_Profile = '/gallery/profileImage/kadir.jpeg'
 const washuk_Profile = '/gallery/profileImage/washuk.png'
 const murtuja_Profile = '/gallery/profileImage/murtuja.jpeg'
 const sahib_Profile = '/gallery/profileImage/sahib.png'
@@ -735,7 +737,7 @@ export const family = {
                 {
                     id: "child-kadir-ali",
                     name: "Kadir Ali",
-                    image: DEFAULT_IMAGE,
+                    image: kadir_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -784,7 +786,7 @@ export const family = {
                 {
                     id: "child-armaan-ali",
                     name: "Armaan Ali",
-                    image: DEFAULT_IMAGE,
+                    image: arman_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {

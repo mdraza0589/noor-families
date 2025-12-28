@@ -44,6 +44,8 @@ const hamza_Profile = '/gallery/profileImage/hamza.jpeg'
 const akib_Profile = '/gallery/profileImage/akib.jpeg'
 const sakib_Profile = '/gallery/profileImage/sakib.jpeg'
 const hasnain_Profile = '/gallery/profileImage/hasnain.jpeg'
+const taha_Profile = '/gallery/profileImage/taha.jpeg'
+const faizal_Profile = '/gallery/profileImage/faizal.jpeg'
 
 
 export const family = {
@@ -112,7 +114,7 @@ export const family = {
             image: murtuja_Profile,
             isMarried: true,
             personalInfo: {
-                dob: "-- -- ----",
+                dob: "01-02-1997",
                 bloodGroup: "O+",
                 education: "Graduate",
                 father: "Shaikh Ali Ullah",
@@ -426,7 +428,7 @@ export const family = {
                 {
                     id: "child-faizal-ali",
                     name: "Faizal Ali",
-                    image: DEFAULT_IMAGE,
+                    image: faizal_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -1319,7 +1321,7 @@ export const family = {
             image: Image6,
             isMarried: true,
             personalInfo: {
-                dob: "-- -- ----",
+                dob: "",
                 bloodGroup: "O+",
                 education: "Graduate",
                 father: "Shaikh Ali Ullah",
@@ -1338,7 +1340,7 @@ export const family = {
                 name: "Rahat Hussain",
                 image: rahat_Profile,
                 personalInfo: {
-                    dob: "--",
+                    dob: "",
                     bloodGroup: "B+",
                     education: "Graduate",
                     father: "Mohammad Saif",
@@ -1358,11 +1360,11 @@ export const family = {
                 {
                     id: "child-taha-hussain",
                     name: "Taha Hussain",
-                    image: DEFAULT_IMAGE,
+                    image: taha_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "-- -- ----",
+                        dob: "",
                         bloodGroup: "B+",
                         education: "School",
                         father: "Mr. Mahelaka",
@@ -1386,7 +1388,7 @@ export const family = {
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "-- -- ----",
+                        dob: "",
                         bloodGroup: "O+",
                         education: "School",
                         father: "Mr. Mahelaka",
@@ -1410,7 +1412,7 @@ export const family = {
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
-                        dob: "-- -- ----",
+                        dob: "",
                         bloodGroup: "A+",
                         education: "School",
                         father: "Mr. Mahelaka",

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import "./Footer.css";
 
-const mutabbar_Profile = "/gallery/profileImage/mutabbar.jpg";
+const mutabbar_Profile = "/gallery/profileImage/mutabbar.jpeg";
 const raza_Profile = "/gallery/profileImage/raza1.png";
 const abba_Profile = "/images/abba.jpg";
 

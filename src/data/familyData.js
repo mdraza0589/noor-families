@@ -65,6 +65,9 @@ export const family = {
                 phone: "9XXXXXXXXX",
                 about:
                     "A disciplined, hardworking man who built the family with honesty and strong values.",
+                address: "Sarbhoka, Chhattishgarh"
+
+
             },
         },
 
@@ -87,6 +90,9 @@ export const family = {
                 phone: "9XXXXXXXXX",
                 about:
                     "The emotional pillar of the family, loving, patient, and deeply caring.",
+                address: "Sarbhoka, Chhattishgarh"
+
+
             },
         },
     },
@@ -113,6 +119,8 @@ export const family = {
                 visitedPlaces: ["Mumbai", "Delhi"],
                 phone: "9XXXXXXXXX",
                 about: "Eldest sibling, responsible and respected by all.",
+                address: "Sarbhoka, Chhattishgarh"
+
             },
             spouse: {
                 name: "Fargab aara",
@@ -130,6 +138,8 @@ export const family = {
                     visitedPlaces: ["Delhi", "Agra"],
                     phone: "",
                     about: "Caring and supportive wife.",
+                    address: "Sarbhoka, Chhattishgarh"
+
                 },
             },
             children: [
@@ -153,6 +163,8 @@ export const family = {
                         visitedPlaces: ["Delhi", "Mumbai", "Haidrabad", "Bilashpur", "Bhilai"],
                         phone: "",
                         about: "Calm and intelligent.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: [],
                 },
@@ -174,6 +186,8 @@ export const family = {
                         visitedPlaces: ["Indore"],
                         phone: "",
                         about: "Creative and family-oriented.",
+                        address: "Bishrampur, Chhattishgarh"
+
                     },
                     spouse: {
                         name: "Rahil Khan",
@@ -191,6 +205,8 @@ export const family = {
                             visitedPlaces: ["Qatar"],
                             phone: "",
                             about: "Supportive and caring husband.",
+                            address: "Bishrampur, Chhattishgarh"
+
                         },
                     },
                     children: [
@@ -213,6 +229,7 @@ export const family = {
                                 visitedPlaces: ["Bishrampur"],
                                 phone: "",
                                 about: "Beloved first child of Sadaf.",
+                                address: "Bishrampur, Chhattishgarh"
                             },
                             children: [],
                         },
@@ -237,6 +254,8 @@ export const family = {
                         visitedPlaces: ["Delhi", "Mumbai"],
                         phone: "",
                         about: "Energetic and creative.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: [],
                 },
@@ -262,9 +281,11 @@ export const family = {
                 visitedPlaces: [],
                 phone: "9XXXXXXXXX",
                 about: "Friendly and outgoing.",
+                address: "Nagpur, Chhattishgarh"
+
             },
             spouse: {
-                name: "Trannum Praveen",
+                name: "Trannum Parveen",
                 image: Image1,
                 personalInfo: {
                     dob: "01-01-1986",
@@ -279,8 +300,11 @@ export const family = {
                     visitedPlaces: ["Indore"],
                     phone: "",
                     about: "Kind and supportive.",
+                    address: "Nagpur, Chhattishgarh"
+
                 },
             },
+
             children: [
                 {
                     id: "child-aman",
@@ -295,12 +319,13 @@ export const family = {
                         father: "Kaisar Ali",
                         mother: "Trannum Praveen",
                         occupation: "Job",
-                        hobbies: ["Football"],
+                        hobbies: ["Social Media", "Traveling"],
                         favoriteColor: "Black",
-                        favoriteFood: "Biryani",
-                        visitedPlaces: ["Bhopal", "Jharkhand", "Mumbai"],
+                        favoriteFood: "Aalu Paratha",
+                        visitedPlaces: ["Bhopal", "Jharkhand", "Mumbai", "Pune", "Delhi", "Nagpur", "Gurgaon", "Jabalpur", "Ranchi", "Raipur", "Durg-Bhilai", "Gujrat", "Bihar",],
                         phone: "",
                         about: "Energetic and playful.",
+                        address: "Nagpur, Chhattishgarh"
                     },
                     children: [],
                 },
@@ -322,6 +347,8 @@ export const family = {
                         visitedPlaces: ["Jharkhand", "Ambikapur"],
                         phone: "",
                         about: "Sweet and gentle.",
+                        address: "Ghurua, Jharkhand"
+
                     },
                     children: [],
                     spouse: {
@@ -340,6 +367,8 @@ export const family = {
                             visitedPlaces: ["Indore", "Bhopal"],
                             phone: "",
                             about: "Hardworking and caring.",
+                            address: "Ghurua, Jharkhand"
+
                         },
                     },
                 },
@@ -365,6 +394,9 @@ export const family = {
                 visitedPlaces: ["Gujrat", "Bhilai", "Raipur"],
                 phone: "9XXXXXXXXX",
                 about: "Quiet and thoughtful.",
+                address: "Sarbhoka, Chhattishgarh"
+
+
             },
             spouse: {
                 name: "Sayera Bano",
@@ -382,6 +414,7 @@ export const family = {
                     visitedPlaces: ["Bhilai", "Jharkhand", "GM Complex"],
                     phone: "",
                     about: "Supportive partner.",
+                    address: "Sarbhoka, Chhattishgarh"
                 },
             },
             children: [
@@ -403,7 +436,8 @@ export const family = {
                         favoriteFood: "Rice",
                         visitedPlaces: ["Bhilai", "Jharkhand", "Ambikapur"],
                         phone: "",
-                        about: "Active and friendly."
+                        about: "Active and friendly.",
+                        address: "Sarbhoka, Chhattishgarh"
                     },
                     children: []
                 },
@@ -425,7 +459,9 @@ export const family = {
                         favoriteFood: "Paneer",
                         visitedPlaces: ["Bhilai", "Jharkhand", "Ambikapur"],
                         phone: "",
-                        about: "Creative and calm."
+                        about: "Creative and calm.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -447,7 +483,9 @@ export const family = {
                         favoriteFood: "Rice",
                         visitedPlaces: ["Bhilai"],
                         phone: "",
-                        about: "Cheerful and playful."
+                        about: "Cheerful and playful.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -469,7 +507,9 @@ export const family = {
                         favoriteFood: "Milk",
                         visitedPlaces: ["Sarbhoka"],
                         phone: "",
-                        about: "Soft-spoken and sweet."
+                        about: "Soft-spoken and sweet.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -495,6 +535,8 @@ export const family = {
                 visitedPlaces: ["Indore", "Bhilai", "Raipur", "Bilashpur"],
                 phone: "9XXXXXXXXX",
                 about: "Active and energetic.",
+                address: "Sarbhoka, Chhattishgarh"
+
             },
             spouse: {
                 name: "Ronak Aara",
@@ -512,6 +554,8 @@ export const family = {
                     visitedPlaces: ["Ambikapur", "Jharkhand"],
                     phone: "",
                     about: "Polite and supportive.",
+                    address: "Sarbhoka, Chhattishgarh"
+
                 },
             },
             children: [
@@ -533,7 +577,9 @@ export const family = {
                         favoriteFood: "Rice",
                         visitedPlaces: ["Tara", "Jharkhand"],
                         phone: "",
-                        about: "Sporty and confident."
+                        about: "Sporty and confident.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -555,7 +601,9 @@ export const family = {
                         favoriteFood: "Pani Puri",
                         visitedPlaces: ["Nagpur", "Tara", "Ambikapur"],
                         phone: "",
-                        about: "Quiet and smart."
+                        about: "Quiet and smart.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -577,7 +625,9 @@ export const family = {
                         favoriteFood: "Roti Sabji",
                         visitedPlaces: ["Nagpur", "Tara"],
                         phone: "",
-                        about: "Creative and shy."
+                        about: "Creative and shy.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -596,10 +646,12 @@ export const family = {
                         occupation: "Student",
                         hobbies: ["Coloring", "Cooking"],
                         favoriteColor: "Blue",
-                        favoriteFood: "Baigan",
+                        favoriteFood: "Chicken Pulao",
                         visitedPlaces: ["Nagpur", "Tara"],
                         phone: "",
-                        about: "Sweet and cheerful."
+                        about: "Sweet and cheerful.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -625,6 +677,8 @@ export const family = {
                 visitedPlaces: ["Delhi", "Mumbai"],
                 phone: "9XXXXXXXXX",
                 about: "Hardworking and practical.",
+                address: "Sarbhoka, Chhattishgarh"
+
             },
             spouse: {
                 name: "Taiba Khatun",
@@ -642,6 +696,8 @@ export const family = {
                     visitedPlaces: ["Jharkhand"],
                     phone: "",
                     about: "Simple and caring.",
+                    address: "Sarbhoka, Chhattishgarh"
+
                 },
             },
             children: [
@@ -663,7 +719,9 @@ export const family = {
                         favoriteFood: "Pulao",
                         visitedPlaces: ["JH"],
                         phone: "",
-                        about: "Creative and gentle."
+                        about: "Creative and gentle.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -683,9 +741,11 @@ export const family = {
                         hobbies: ["Cricket"],
                         favoriteColor: "Blue",
                         favoriteFood: "Biryani",
-                        visitedPlaces: ["Jharkhand","Madya Pradesh","Bihar"],
+                        visitedPlaces: ["Jharkhand", "Madya Pradesh", "Bihar"],
                         phone: "",
-                        about: "Active and sporty."
+                        about: "Active and sporty.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -708,7 +768,9 @@ export const family = {
                         favoriteFood: "Noodles",
                         visitedPlaces: ["JH"],
                         phone: "",
-                        about: "Cheerful and expressive."
+                        about: "Cheerful and expressive.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -730,7 +792,9 @@ export const family = {
                         favoriteFood: "Biscuits",
                         visitedPlaces: ["JH"],
                         phone: "",
-                        about: "Youngest and playful."
+                        about: "Youngest and playful.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -756,6 +820,8 @@ export const family = {
                 visitedPlaces: ["Saudi Arab", "Mumbai", "Agra"],
                 phone: "9XXXXXXXXX",
                 about: "calm personality.",
+                address: "Sarbhoka, Chhattishgarh"
+
             },
             spouse: {
                 name: "Sahana Khatun",
@@ -773,6 +839,8 @@ export const family = {
                     visitedPlaces: [],
                     phone: "",
                     about: "Gentle and caring.",
+                    address: "Sarbhoka, Chhattishgarh"
+
                 },
             },
 
@@ -795,7 +863,9 @@ export const family = {
                         favoriteFood: "Rice",
                         visitedPlaces: ["Lakhanpur"],
                         phone: "",
-                        about: "Active and confident."
+                        about: "Active and confident.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -817,7 +887,9 @@ export const family = {
                         favoriteFood: "Milk",
                         visitedPlaces: ["Lakhanpur"],
                         phone: "",
-                        about: "Calm and creative."
+                        about: "Calm and creative.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -839,7 +911,9 @@ export const family = {
                         favoriteFood: "Biscuits",
                         visitedPlaces: ["Lakhanpur"],
                         phone: "",
-                        about: "Playful and cheerful."
+                        about: "Playful and cheerful.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -861,7 +935,9 @@ export const family = {
                         favoriteFood: "Milk",
                         visitedPlaces: ["Lakhanpur"],
                         phone: "",
-                        about: "Youngest and adorable."
+                        about: "Youngest and adorable.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -890,6 +966,8 @@ export const family = {
                 phone: "9XXXXXXXXX",
                 about:
                     "Calm and keep learning.",
+                address: "Sarbhoka, Chhattishgarh"
+
             },
             children: [],
         },
@@ -913,6 +991,8 @@ export const family = {
                 visitedPlaces: ["Chattishgarh", "Jharkhand"],
                 phone: "9XXXXXXXXX",
                 about: "Cheerful, artistic, and very caring by nature. Brings positivity to the family.",
+                address: "Talasbaria, Jharkhand"
+
             },
 
             spouse: {
@@ -931,6 +1011,8 @@ export const family = {
                     visitedPlaces: ["Bhopal", "Indore"],
                     phone: "",
                     about: "Disciplined, hardworking, and supportive life partner.",
+                    address: "Talasbaria, Jharkhand"
+
                 },
             },
 
@@ -954,6 +1036,8 @@ export const family = {
                         visitedPlaces: ["Delhi", "Saudi Arab", "Qatar", "Chhattishgarh"],
                         phone: "",
                         about: "Quiet, polite, and loving child.",
+                        address: "Talasbaria, Jharkhand"
+
                     },
 
                     spouse: {
@@ -972,6 +1056,8 @@ export const family = {
                             visitedPlaces: ["JH"],
                             phone: "",
                             about: "Kind-hearted and supportive wife.",
+                            address: "Talasbaria, Jharkhand"
+
                         },
                     },
 
@@ -995,6 +1081,8 @@ export const family = {
                                 visitedPlaces: ["JH"],
                                 phone: "",
                                 about: "Cheerful and playful little girl.",
+                                address: "Talasbaria, Jharkhand"
+
                             },
                             children: [],
                         },
@@ -1018,6 +1106,8 @@ export const family = {
                                 visitedPlaces: ["JH"],
                                 phone: "",
                                 about: "Youngest joy of the family.",
+                                address: "Talasbaria, Jharkhand"
+
                             },
                             children: [],
                         },
@@ -1043,6 +1133,8 @@ export const family = {
                         visitedPlaces: ["Pune", "Mumbai", "Bhopal", "Chattishgarh"],
                         phone: "",
                         about: "Smart, active, and curious child.",
+                        address: "Talasbaria, Jharkhand"
+
                     },
                     children: [],
                 },
@@ -1066,6 +1158,8 @@ export const family = {
                         visitedPlaces: ["JH", "CG", "UP"],
                         phone: "",
                         about: "Playful and adorable.",
+                        address: "Chapki, Uttar Pradesh"
+
                     },
                     spouse: {
                         name: "Anwar khan",
@@ -1083,6 +1177,9 @@ export const family = {
                             visitedPlaces: ["Bhopal"],
                             phone: "",
                             about: "Gentle and caring.",
+                            address: "Chapki, Uttar Pradesh"
+
+
                         },
                     },
                     children: [
@@ -1105,6 +1202,9 @@ export const family = {
                                 visitedPlaces: ["JH"],
                                 phone: "",
                                 about: "Happy and calm baby.",
+                                address: "Chapki, Uttar Pradesh"
+
+
                             },
                             children: [],
                         },
@@ -1127,6 +1227,9 @@ export const family = {
                                 visitedPlaces: ["Jh"],
                                 phone: "",
                                 about: "Newest blessing of the family.",
+                                address: "Chapki, Uttar Pradesh"
+
+
                             },
                             children: [],
                         },
@@ -1151,6 +1254,8 @@ export const family = {
                         visitedPlaces: ["Aurangabad", "JH", "CG"],
                         phone: "",
                         about: "Joyful and energetic.",
+                        address: "Aurangabad, Maharashtra"
+
                     },
                     children: [],
                     spouse: {
@@ -1169,6 +1274,8 @@ export const family = {
                             visitedPlaces: ["Bhopal", "Indore"],
                             phone: "",
                             about: "Supportive and kind-hearted.",
+                            address: "Aurangabad, Maharashtra"
+
                         },
                     },
                 },
@@ -1188,9 +1295,11 @@ export const family = {
                         hobbies: ["Sports"],
                         favoriteColor: "Black",
                         favoriteFood: "Biryani",
-                        visitedPlaces: ["JH","CG"],
+                        visitedPlaces: ["JH", "CG"],
                         phone: "",
                         about: "Happy and calm boy.",
+                        address: "Talasbaria, Jharkhand"
+
                     },
                     children: [],
                 },
@@ -1217,6 +1326,8 @@ export const family = {
                 visitedPlaces: ["Mumbai", "Delhi", "JH"],
                 phone: "9XXXXXXXXX",
                 about: "Youngest sibling, creative and ambitious.",
+                address: "Nagpur, Chhattishgarh"
+
             },
             spouse: {
                 name: "Rahat Hussain",
@@ -1234,6 +1345,8 @@ export const family = {
                     visitedPlaces: ["Bhopal"],
                     phone: "",
                     about: "Supportive and understanding.",
+                    address: "Nagpur, Chhattishgarh"
+
                 },
             },
             children: [
@@ -1255,7 +1368,9 @@ export const family = {
                         favoriteFood: "Milk",
                         visitedPlaces: ["Bhopal"],
                         phone: "",
-                        about: "Playful and smart."
+                        about: "Playful and smart.",
+                        address: "Nagpur, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -1277,7 +1392,9 @@ export const family = {
                         favoriteFood: "Milk",
                         visitedPlaces: ["Bhopal"],
                         phone: "",
-                        about: "Sweet and calm."
+                        about: "Sweet and calm.",
+                        address: "Nagpur, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -1299,7 +1416,9 @@ export const family = {
                         favoriteFood: "Milk",
                         visitedPlaces: ["Bhopal"],
                         phone: "",
-                        about: "Youngest joy."
+                        about: "Youngest joy.",
+                        address: "Nagpur, Chhattishgarh"
+
                     },
                     children: []
                 },
@@ -1325,6 +1444,8 @@ export const family = {
                 visitedPlaces: ["Jharkhand"],
                 phone: "9XXXXXXXXX",
                 about: "Soft-spoken and loving.",
+                address: "Sarbhoka, Chhattishgarh"
+
             },
             children: [
                 {
@@ -1346,6 +1467,8 @@ export const family = {
                         visitedPlaces: ["Ambikapur", "Korba"],
                         phone: "",
                         about: "Cute and playful.",
+                        address: "Sarbhoka, Chhattishgarh"
+
                     },
                     children: [],
                 },
@@ -1371,6 +1494,7 @@ export const family = {
                 visitedPlaces: ["Jharkhand", "Korba"],
                 phone: "9XXXXXXXXX",
                 about: "Creative and graceful.",
+                address: "Korba, Chhattishgarh"
             },
             spouse: {
                 name: "Wasim Khan",
@@ -1388,6 +1512,8 @@ export const family = {
                     visitedPlaces: ["Indore"],
                     phone: "",
                     about: "Supportive partner.",
+                    address: "Korba, Chhattishgarh"
+
                 },
             },
             children: [
@@ -1410,6 +1536,8 @@ export const family = {
                         visitedPlaces: ["Korba"],
                         phone: "",
                         about: "Energetic and playful.",
+                        address: "Korba, Chhattishgarh"
+
                     },
                     children: [],
                 },
@@ -1432,6 +1560,8 @@ export const family = {
                         visitedPlaces: [],
                         phone: "",
                         about: "Youngest and adorable.",
+                        address: "Korba, Chhattishgarh"
+
                     },
                     children: [],
                 },

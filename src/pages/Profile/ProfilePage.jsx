@@ -136,6 +136,9 @@ const ProfilePage = () => {
                         {info.favoriteFood && (
                             <InfoRow label="Favorite Food" value={info.favoriteFood} icon="🍽️" />
                         )}
+                        {info.address && (
+                            <InfoRow label="Address" value={info.address} icon="🏠" />
+                        )}
                     </div>
 
                     {info.hobbies?.length > 0 && (

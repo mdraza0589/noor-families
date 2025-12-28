@@ -84,7 +84,7 @@ const ProfilePage = () => {
                 </div>
 
                 {member.portfolio && (
-                    <div className="mt-3 text-center sm:text-left">
+                    <div className="mt-3 text-center">
                         <a
                             href={member.portfolio}
                             target="_blank"

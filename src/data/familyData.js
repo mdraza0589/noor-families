@@ -287,8 +287,8 @@ export const family = {
                 favoriteFood: "",
                 visitedPlaces: [],
                 phone: "9XXXXXXXXX",
-                about: "Friendly and outgoing.",
-                address: "Nagpur, Chhattishgarh"
+                about: "",
+                address: ""
 
             },
             spouse: {
@@ -1587,7 +1587,6 @@ const All3 = "/gallery/All/brother2.jpg";
 const All4 = "/gallery/All/murtuja1.jpg";
 const All5 = "/gallery/All/raza1.jpg";
 const All6 = "/gallery/All/raza2.jpg";
-const All7 = "/gallery/All/amritdhara1.jpg";
 const All8 = "/gallery/All/bhopal1.jpg";
 const All9 = "/gallery/All/aizah.jpeg";
 
@@ -1661,7 +1660,6 @@ export const familyGallery = {
                 { id: "all-4", type: "image", src: All4, title: "Murtuja", year: 2020 },
                 { id: "all-5", type: "image", src: All5, title: "Raza", year: 2020 },
                 { id: "all-6", type: "image", src: All6, title: "Moments", year: 2020 },
-                { id: "all-7", type: "image", src: All7, title: "Moments", year: 2020 },
                 { id: "all-8", type: "image", src: All8, title: "Moments", year: 2020 },
                 { id: "all-9", type: "image", src: All9, title: "Aizah(Sadaf)", year: 2020 },
                 // { id: "all-9", type: "video", src: video1, title: "Funny", year: 2022 },

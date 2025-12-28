@@ -192,11 +192,10 @@ export const family = {
                         hobbies: ["Photography", "Cooking"],
                         favoriteColor: "Pink",
                         favoriteFood: "Pasta",
-                        visitedPlaces: ["Indore"],
+                        visitedPlaces: ["Delhi", "Mumbai", "Bishrampur"],
                         phone: "",
                         about: "Creative and family-oriented.",
                         address: "Bishrampur, Chhattishgarh"
-
                     },
                     spouse: {
                         name: "Rahil Khan",

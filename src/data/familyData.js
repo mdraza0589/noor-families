@@ -9,6 +9,7 @@ const Image6 = "/images/image-6.png";
 const Image7 = "/images/ammi.png";
 const Image1 = "/images/image-1.png";
 const child1 = "/images/image-4.png"
+const child2 = "/images/image-2.png"
 
 
 const aizah_Profile = '/gallery/profileImage/aizah.jpg'
@@ -175,7 +176,7 @@ export const family = {
                         about: "Creative and family-oriented.",
                     },
                     spouse: {
-                        name: "Rahil",
+                        name: "Rahil Khan",
                         image: DEFAULT_IMAGE,
                         personalInfo: {
                             dob: "13-01-1992",
@@ -295,8 +296,8 @@ export const family = {
                         mother: "Trannum Praveen",
                         occupation: "Graduate",
                         hobbies: ["Football"],
-                        favoriteColor: "Blue",
-                        favoriteFood: "Roti Chicken",
+                        favoriteColor: "Black",
+                        favoriteFood: "Biryani",
                         visitedPlaces: ["Bhopal", "Jharkhand", "Mumbai"],
                         phone: "",
                         about: "Energetic and playful.",
@@ -647,7 +648,7 @@ export const family = {
                 {
                     id: "child-alfia-perveen",
                     name: "Alfiya Perveen",
-                    image: DEFAULT_IMAGE,
+                    image: Image6,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -681,8 +682,8 @@ export const family = {
                         occupation: "Student",
                         hobbies: ["Cricket"],
                         favoriteColor: "Blue",
-                        favoriteFood: "Rice",
-                        visitedPlaces: ["JH"],
+                        favoriteFood: "Biryani",
+                        visitedPlaces: ["Jharkhand","Madya Pradesh","Bihar"],
                         phone: "",
                         about: "Active and sporty."
                     },
@@ -692,7 +693,7 @@ export const family = {
                 {
                     id: "child-afsha-perveen",
                     name: "Afsha Perveen",
-                    image: DEFAULT_IMAGE,
+                    image: child2,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
@@ -754,7 +755,7 @@ export const family = {
                 favoriteFood: "Non veg Thali",
                 visitedPlaces: ["Saudi Arab", "Mumbai", "Agra"],
                 phone: "9XXXXXXXXX",
-                about: "Helpful and calm.",
+                about: "calm personality.",
             },
             spouse: {
                 name: "Sahana Khatun",
@@ -1036,9 +1037,9 @@ export const family = {
                         father: "Shaikh Suhail Ahamad",
                         mother: "Dilruba Khatun",
                         occupation: "Mechanical Engineer",
-                        hobbies: ["Drawing", "Playing"],
+                        hobbies: ["Drawing", "Cricket"],
                         favoriteColor: "Blue",
-                        favoriteFood: "Rice",
+                        favoriteFood: "Egg Curry",
                         visitedPlaces: ["Pune", "Mumbai", "Bhopal", "Chattishgarh"],
                         phone: "",
                         about: "Smart, active, and curious child.",

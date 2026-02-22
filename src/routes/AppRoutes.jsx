@@ -5,48 +5,32 @@ import HomePage from "../pages/Home/HomePage";
 import MembersPage from "../pages/Members/MembersPage";
 import ProfilePage from "../pages/Profile/ProfilePage";
 import FamilyGalleryPage from "../pages/Gallery/FamilyGalleryPage";
-import ProtectedRoute from "../components/common/ProtectedRoute";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop /> 
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<PasswordPage />} />
-
-        <Route
-          path="/home"
-          element={
-            <ProtectedRoute>
-              <HomePage />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/" element={<HomePage />} />
 
         <Route
           path="/members"
           element={
-            <ProtectedRoute>
-              <MembersPage />
-            </ProtectedRoute>
+            <MembersPage />
           }
         />
 
         <Route
           path="/profile/:id"
           element={
-            <ProtectedRoute>
-              <ProfilePage />
-            </ProtectedRoute>
+            <ProfilePage />
           }
         />
 
         <Route
           path="/family-gallery"
           element={
-            <ProtectedRoute>
-              <FamilyGalleryPage />
-            </ProtectedRoute>
+            <FamilyGalleryPage />
           }
         />
       </Routes>

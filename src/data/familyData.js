@@ -1263,9 +1263,32 @@ export const family = {
                         phone: "",
                         about: "Joyful and energetic.",
                         address: "Aurangabad, Maharashtra"
-
                     },
-                    children: [],
+
+                    // Added Child Here
+                    children: [
+                        {
+                            id: "child-jugnu-hanifa",
+                            name: "Hanifa Fatima",
+                            image: child1,
+                            personalInfo: {
+                                dob: "08-02-2026",
+                                bloodGroup: "O+",
+                                education: "Infant",
+                                about: "Daughter of Jugnu Vahdat and Mohammad Zeeshan Khan.",
+                                father: "Mohammad Zeeshan Khan",
+                                mother: "Jugnu Vahdat",
+                                occupation: "playing",
+                                hobbies: ["Eating", "Playing"],
+                                favoriteColor: "Yellow",
+                                favoriteFood: "Milk",
+                                visitedPlaces: ["Aurangabad", "JH", "CG"],
+                                phone: "",
+                                address: "Aurangabad, Maharashtra"
+                            }
+                        }
+                    ],
+
                     spouse: {
                         name: "Mohammad Zeeshan Khan",
                         image: zeeshan_Profile,
@@ -1283,9 +1306,8 @@ export const family = {
                             phone: "",
                             about: "Supportive and kind-hearted.",
                             address: "Aurangabad, Maharashtra"
-
-                        },
-                    },
+                        }
+                    }
                 },
                 {
                     id: "dilkash-raza",

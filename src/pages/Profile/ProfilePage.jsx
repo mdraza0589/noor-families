@@ -299,3 +299,6 @@ const InfoRow = ({ label, value, icon }) => (
 );
 
 export default ProfilePage;
+
+
+

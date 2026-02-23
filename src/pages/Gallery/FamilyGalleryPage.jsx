@@ -18,7 +18,7 @@ const FamilyGalleryPage = () => {
                             Family Gallery
                         </h1>
                         <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-                            Moments captured with love ❤️ — memories that stay forever
+                            Moments captured with Family — memories that stay forever
                         </p>
                     </div>
 
@@ -108,7 +108,7 @@ const FamilyGalleryPage = () => {
                     {/* ================= BACK BUTTON ================= */}
                     <div className="text-center mt-20">
                         <Link
-                            to="/home"
+                            to="/"
                             className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 hover:bg-white/20 transition text-sm"
                         >
                             ← Back to Home
@@ -149,7 +149,7 @@ const FamilyGalleryPage = () => {
                             </p>
                         )}
                     </div>
-                    
+
                 </div>
             )}
         </>

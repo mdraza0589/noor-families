@@ -11,6 +11,7 @@ const Footer = () => {
   const footerRef = useRef(null);
   const linkRefs = useRef([]);
   const [isMobile, setIsMobile] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   /* ================= MOBILE CHECK ================= */
   useEffect(() => {
@@ -23,21 +24,26 @@ const Footer = () => {
 
   /* ================= ANIMATION OBSERVER ================= */
   useEffect(() => {
+    // If already animated, don't set up observer again
+    if (hasAnimated) return;
+
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
+            // Animate footer
             entry.target.classList.add("animate-in");
 
+            // Animate links with delay
             linkRefs.current.forEach((link, i) => {
               if (link) {
-                setTimeout(
-                  () => link.classList.add("animate-in"),
-                  i * (isMobile ? 40 : 80)
-                );
+                setTimeout(() => {
+                  link.classList.add("animate-in");
+                }, i * (isMobile ? 40 : 80));
               }
             });
 
+            setHasAnimated(true);
             observer.unobserve(entry.target);
           }
         });
@@ -45,9 +51,12 @@ const Footer = () => {
       { threshold: isMobile ? 0.1 : 0.2 }
     );
 
-    if (footerRef.current) observer.observe(footerRef.current);
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
     return () => observer.disconnect();
-  }, [isMobile]);
+  }, [isMobile, hasAnimated]);
 
   /* ================= RECURSIVE MEMBER FLATTENER ================= */
   const flattenMembers = () => {

@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
-import PasswordPage from "../pages/Auth/PasswordPage";
 import HomePage from "../pages/Home/HomePage";
 import MembersPage from "../pages/Members/MembersPage";
 import ProfilePage from "../pages/Profile/ProfilePage";

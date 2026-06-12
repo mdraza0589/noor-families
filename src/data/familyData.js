@@ -17,7 +17,6 @@ const dilshad_Profile = '/gallery/profileImage/dilshad.jpg'
 const jugnu_Profile = '/gallery/profileImage/jugnu.jpg'
 const raza_Profile = '/gallery/profileImage/raza.jpg'
 const shad_Profile = '/gallery/profileImage/shad.jpg'
-const tahira_Profile = '/gallery/profileImage/tahira.jpg'
 const ahamad_Profile = '/gallery/profileImage/ahamad.png'
 const mashuk_Profile = '/gallery/profileImage/mashuk.jpg'
 const mutabbar_Profile = '/gallery/profileImage/mutabbar.jpeg'
@@ -38,7 +37,7 @@ const asif_Profile = '/gallery/profileImage/asif.png'
 const kaiser_Profile = '/gallery/profileImage/kaisar.png'
 const arhan_Profile = '/gallery/profileImage/arhan.jpeg'
 const arif_Profile = '/gallery/profileImage/arif.jpg'
-const sahad_Profile = '/gallery/profileImage/sahad.jpg'
+const sahad_Profile = '/gallery/profileImage/sahad-1.jpg'
 const ahad_Profile = '/gallery/profileImage/ahad.jpeg'
 const taslim_Profile = '/gallery/profileImage/taslim.jpg'
 const ariz_Profile = '/gallery/profileImage/ariz.jpeg'
@@ -48,7 +47,9 @@ const sakib_Profile = '/gallery/profileImage/sakib.jpeg'
 const hasnain_Profile = '/gallery/profileImage/hasnain.jpeg'
 const taha_Profile = '/gallery/profileImage/taha.jpeg'
 const faizal_Profile = '/gallery/profileImage/faizal.jpeg'
-
+const adil_Profile = '/gallery/profileImage/adil-1.jpg'
+const tahira_Profile = '/gallery/profileImage/tahira-1.jpg'
+const tauheed_Profile = '/gallery/profileImage/tauheed-1.jpg'
 
 export const family = {
     familyName: "The Noor Family",
@@ -783,13 +784,37 @@ export const family = {
                     children: []
                 },
                 {
-                    id: "child-armaan-ali",
-                    name: "Armaan Ali",
+                    id: "arman-ali",
+                    name: "Arman Ali",
                     image: arman_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {
                         dob: "06-05-2021",
+                        bloodGroup: "B+",
+                        education: "School",
+                        father: "mutabbar Ali",
+                        mother: "Taiba Khatun",
+                        occupation: "Student",
+                        hobbies: ["Playing"],
+                        favoriteColor: "Red",
+                        favoriteFood: "Biscuits",
+                        visitedPlaces: ["JH"],
+                        phone: "",
+                        about: "Youngest and playful.",
+                        address: "Sarbhoka, Chhattishgarh"
+
+                    },
+                    children: []
+                },
+                {
+                    id: "adil-ali",
+                    name: "Adil Ali",
+                    image: adil_Profile,
+                    isMarried: false,
+                    spouse: null,
+                    personalInfo: {
+                        dob: "06-02-2026",
                         bloodGroup: "B+",
                         education: "School",
                         father: "mutabbar Ali",
@@ -928,7 +953,7 @@ export const family = {
                 {
                     id: "child-taiyab",
                     name: "Tauheed Raza",
-                    image: DEFAULT_IMAGE,
+                    image: tauheed_Profile,
                     isMarried: false,
                     spouse: null,
                     personalInfo: {

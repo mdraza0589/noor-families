@@ -1,158 +1,99 @@
 import { familyGallery } from "../../data/familyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Footer from "../../components/common/Footer";
 
 const FamilyGalleryPage = () => {
     const All2 = "/gallery/All/brother1.jpg";
-
     const [selectedImage, setSelectedImage] = useState(null);
 
+    // Function to handle image download
+    const handleDownload = async (src, title) => {
+        try {
+            const response = await fetch(src);
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.setAttribute("download", `${title || "family-photo"}.jpg`);
+            document.body.appendChild(link);
+            link.click();
+            link.parentNode.removeChild(link);
+        } catch (error) {
+            console.error("Download failed", error);
+        }
+    };
+
     return (
-        <>
-            <section className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-black text-white py-16">
-                <div className="max-w-7xl mx-auto px-4">
+        <div className="bg-[#FAF9F6] min-h-screen text-slate-800 pt-10">
+            <div className="max-w-6xl mx-auto px-6">
+                {/* Header */}
+                <header className="text-center mb-6">
+                    <span className="text-amber-700 font-medium tracking-[0.2em] uppercase text-sm">Our Memories</span>
+                    <h1 className="text-5xl md:text-6xl font-serif text-slate-900 mt-4 mb-6">Family Gallery</h1>
+                    <div className="h-px w-20 bg-slate-300 mx-auto"></div>
+                </header>
 
-                    {/* ================= HEADER ================= */}
-                    <div className="text-center mb-16">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                            Family Gallery
-                        </h1>
-                        <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-                            Moments captured with Family — memories that stay forever
-                        </p>
-                    </div>
-
-                    {/* Optional Banner Image */}
-                    <div className="mb-14">
-                        <img
-                            src={All2}
-                            alt="Family"
-                            className="w-full object-cover rounded-3xl border border-white/10"
-                        />
-                    </div>
-
-                    {/* ================= MAIN GALLERY ================= */}
-                    <div className="grid grid-cols-1 gap-14">
-                        {familyGallery.categories.map((category) => (
-                            <div
-                                key={category.id}
-                                className="bg-white/5 rounded-3xl p-2 sm:p-8 border border-white/10 shadow-lg"
-                            >
-                                {/* Category Header */}
-                                <div className="mb-8">
-                                    <h2 className="text-2xl sm:text-3xl font-semibold">
-                                        {category.title}
-                                    </h2>
-                                    <p className="text-gray-400 text-sm mt-1">
-                                        {category.description}
-                                    </p>
-                                </div>
-
-                                {/* ================= IMAGES ================= */}
-                                {category.media.some(item => item.type === "image") && (
-                                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-10">
-                                        {category.media
-                                            .filter(item => item.type === "image")
-                                            .map(photo => (
-                                                <div
-                                                    key={photo.id}
-                                                    onClick={() => setSelectedImage(photo)}
-                                                    className="group relative overflow-hidden rounded-2xl bg-black cursor-pointer"
-                                                >
-                                                    <img
-                                                        src={photo.src}
-                                                        alt={photo.title}
-                                                        className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
-                                                    />
-
-                                                    {/* Overlay */}
-                                                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-end">
-                                                        <p className="text-xs p-2 text-gray-200">
-                                                            {photo.title}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            ))}
-                                    </div>
-                                )}
-
-                                {/* ================= VIDEOS ================= */}
-                                {category.media.some(item => item.type === "video") && (
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                        {category.media
-                                            .filter(item => item.type === "video")
-                                            .map(video => (
-                                                <div
-                                                    key={video.id}
-                                                    className="rounded-2xl overflow-hidden bg-black border border-white/10 shadow-md"
-                                                >
-                                                    <video
-                                                        controls
-                                                        className="w-full h-60 object-cover"
-                                                    >
-                                                        <source src={video.src} type="video/mp4" />
-                                                        Your browser does not support the video tag.
-                                                    </video>
-
-                                                    <div className="p-3 text-center text-sm bg-black/70 text-gray-300">
-                                                        {video.title}
-                                                    </div>
-                                                </div>
-                                            ))}
-                                    </div>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* ================= BACK BUTTON ================= */}
-                    <div className="text-center mt-20">
-                        <Link
-                            to="/"
-                            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 hover:bg-white/20 transition text-sm"
-                        >
-                            ← Back to Home
-                        </Link>
-                    </div>
+                {/* Banner */}
+                <div className="mb-20">
+                    <img src={All2} alt="Family" className=" object-contain rounded-2xl" />
                 </div>
-            </section>
 
-            {/* ================= FULLSCREEN IMAGE MODAL ================= */}
+                {/* Categories */}
+                <div className="space-y-10">
+                    {familyGallery.categories.map((category) => (
+                        <section key={category.id}>
+                            <h2 className="text-2xl font-serif font-bold text-slate-900 mb-8 border-l-4 border-amber-500 pl-4">
+                                {category.title}
+                            </h2>
+
+                            {/* Images Grid */}
+                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                                {category.media.filter(i => i.type === "image").map(photo => (
+                                    <div
+                                        key={photo.id}
+                                        onClick={() => setSelectedImage(photo)}
+                                        className="group relative aspect-square overflow-hidden rounded-xl cursor-pointer bg-slate-200"
+                                    >
+                                        <img src={photo.src} alt={photo.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                                        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    ))}
+                </div>
+
+                {/* Back Button */}
+                <div className="text-center mt-24 mb-6">
+                    <Link to="/" className="text-slate-500 hover:text-slate-900 transition underline underline-offset-8">
+                        ← Back to Home
+                    </Link>
+                </div>
+            </div>
+
+            {/* Fullscreen Modal */}
             {selectedImage && (
-                <div
-                    className="fixed inset-0 z-[999] bg-black/90 flex items-center justify-center p-4"
-                    onClick={() => setSelectedImage(null)}
-                >
-                    <div
-                        className="relative max-w-5xl w-full"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        {/* Close Button */}
-                        <button
-                            onClick={() => setSelectedImage(null)}
-                            className="absolute -top-10 right-0 text-white text-3xl hover:text-red-400"
-                        >
-                            ✕
-                        </button>
+                <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-6" onClick={() => setSelectedImage(null)}>
+                    <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
+                        <button onClick={() => setSelectedImage(null)} className="absolute -top-12 right-0 text-white text-xl">Close</button>
 
-                        {/* Image */}
-                        <img
-                            src={selectedImage.src}
-                            alt={selectedImage.title}
-                            className="w-full max-h-[80vh] object-contain rounded-xl"
-                        />
+                        <img src={selectedImage.src} alt={selectedImage.title} className="w-full max-h-[70vh] object-contain rounded-lg" />
 
-                        {/* Caption */}
-                        {selectedImage.title && (
-                            <p className="mt-4 text-center text-gray-300 text-sm">
-                                {selectedImage.title}
-                            </p>
-                        )}
+                        <div className="mt-6 flex justify-between items-center text-white">
+                            <p className="font-medium">{selectedImage.title}</p>
+                            <button
+                                onClick={() => handleDownload(selectedImage.src, selectedImage.title)}
+                                className="px-6 py-2 bg-amber-600 hover:bg-amber-700 rounded-full text-sm font-medium transition"
+                            >
+                                Download Image
+                            </button>
+                        </div>
                     </div>
-
                 </div>
             )}
-        </>
+            <Footer />
+        </div>
     );
 };
 

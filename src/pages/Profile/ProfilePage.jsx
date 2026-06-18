@@ -3,7 +3,7 @@ import { family } from "../../data/familyData";
 import { findMemberById } from "../../utils/findMemberById";
 import Footer from "../../components/common/Footer";
 import { useEffect, useState } from "react";
-
+import { FaArrowRight } from "react-icons/fa";
 const ProfilePage = () => {
     const { id } = useParams();
     const navigate = useNavigate();
@@ -20,8 +20,8 @@ const ProfilePage = () => {
 
     if (!member) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                Loading...
+            <div className="min-h-screen flex items-center justify-center bg-[#FAF9F6]">
+                <div className="text-slate-600 animate-pulse">Loading profile...</div>
             </div>
         );
     }
@@ -29,276 +29,95 @@ const ProfilePage = () => {
     const info = member.personalInfo || {};
 
     return (
-        <>
-            {/* ✅ ANIMATION FIX (SAME AS MEMBERS PAGE) */}
-            <style>
-                {`
-                @keyframes fadeIn {
-                    from { opacity: 0; transform: translateY(30px); }
-                    to { opacity: 1; transform: translateY(0); }
-                }
-                .animate-fadeIn {
-                    animation: fadeIn 0.8s ease-out forwards;
-                }
-                `}
-            </style>
-
+        <div className="bg-[#FAF9F6] min-h-screen text-slate-900 font-sans">
             {/* Back Button */}
-            <div className="fixed top-4 left-4 z-50">
+            <div className="fixed top-6 left-6 z-50">
                 <button
                     onClick={() => navigate(-1)}
-                    className="bg-black/60 text-white px-4 py-2 rounded-full"
+                    className="flex items-center gap-2 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 px-5 py-2.5 rounded-full shadow-sm border border-slate-200 transition-all font-medium text-sm"
                 >
                     ← Back
                 </button>
             </div>
 
             {/* Profile Header */}
-            <section className="bg-linear-to-br from-indigo-900 via-purple-900 to-slate-900 text-white pt-20 pb-10">
-                <div className="max-w-5xl mx-auto px-4">
-                    <div className="flex flex-col sm:flex-row items-center gap-6">
-                        <img
-                            src={member.image}
-                            alt={member.name}
-                            className="w-60 h-60 sm:w-40 sm:h-40 rounded-4xl object-cover border-4 border-white/20"
-                        />
+            <header className="pt-24 pb-12 px-6">
+                <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
+                    <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-80 h-80 rounded-4xl object-cover border-4 border-white shadow-xl mb-8"
+                    />
+                    <h1 className="text-3xl lg:text-4xl sm:text-3xl font-serif font-bold text-slate-900">{member.name}</h1>
+                    <p className="text-amber-700 font-medium uppercase tracking-[0.2em] text-sm mt-2">
+                        {info.occupation || "Family Member"}
+                    </p>
+                </div>
+            </header>
 
-                        <div className="text-center sm:text-left">
-                            <h1 className="text-2xl sm:text-4xl font-bold">
-                                {member.name}
-                            </h1>
-
-                            {info.occupation && (
-                                <p className="text-gray-300 mt-1">
-                                    {info.occupation}
-                                </p>
-                            )}
-
-                            {info.education && (
-                                <p className="mt-2 text-sm">
-                                    {info.education}
-                                </p>
-                            )}
-                        </div>
-                    </div>
+            {/* Personal Information */}
+            <section className="max-w-4xl mx-auto px-6 py-6">
+                <h2 className="text-2xl font-serif font-bold mb-8 border-l-4 border-amber-500 pl-4">Details</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {info.father && <InfoRow label="Father" value={info.father} />}
+                    {info.mother && <InfoRow label="Mother" value={info.mother} />}
+                    {info.dob && <InfoRow label="Born" value={info.dob} />}
+                    {info.bloodGroup && <InfoRow label="Blood Type" value={info.bloodGroup} />}
+                    {info.education && <InfoRow label="Education" value={info.education} />}
+                    {info.address && <InfoRow label="Address" value={info.address} />}
                 </div>
 
-                {member.portfolio && (
-                    <div className="mt-3 text-center">
-                        <a
-                            href={member.portfolio}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="
-                                inline-flex items-center gap-2
-                                px-4 py-2 rounded-full
-                                bg-indigo-600/20 text-indigo-300
-                                hover:bg-indigo-600/30 hover:text-indigo-200
-                                transition text-sm font-medium
-                            "
-                        >
-                            <span>View Portfolio</span>
-                            <span>🔗</span>
-                        </a>
+                {info.about && (
+                    <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                        <h3 className="font-serif text-xl mb-4">About {member.name.split(" ")[0]}</h3>
+                        <p className="text-slate-600 leading-relaxed">{info.about}</p>
                     </div>
                 )}
             </section>
 
-            {/* Personal Information */}
-            <section className="bg-black py-12">
-                <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 text-white text-center">
-                        Personal Information
-                    </h2>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        {info.father && (
-                            <InfoRow label="Father's Name" value={info.father} icon="😊" />
-                        )}
-                        {info.mother && (
-                            <InfoRow label="Mother's Name" value={info.mother} icon="🙌" />
-                        )}
-                        {info.dob && (
-                            <InfoRow label="Date of Birth" value={info.dob} icon="🎂" />
-                        )}
-                        {info.bloodGroup && (
-                            <InfoRow label="Blood Group" value={info.bloodGroup} icon="🩸" />
-                        )}
-                        {info.education && (
-                            <InfoRow label="Education" value={info.education} icon="🎓" />
-                        )}
-                        {info.occupation && (
-                            <InfoRow label="Occupation" value={info.occupation} icon="💼" />
-                        )}
-                        {info.favoriteColor && (
-                            <InfoRow label="Favorite Color" value={info.favoriteColor} icon="🎨" />
-                        )}
-                        {info.favoriteFood && (
-                            <InfoRow label="Favorite Food" value={info.favoriteFood} icon="🍽️" />
-                        )}
-                        {info.address && (
-                            <InfoRow label="Address" value={info.address} icon="🏠" />
-                        )}
-                    </div>
-
-                    {info.hobbies?.length > 0 && (
-                        <div className="mt-10 bg-white/5 p-6 rounded-xl">
-                            <h3 className="text-xl font-semibold mb-4 text-white">
-                                Hobbies
-                            </h3>
-                            <div className="flex flex-wrap gap-3">
-                                {info.hobbies.map((hobby, i) => (
-                                    <span
-                                        key={i}
-                                        className="px-4 py-1 rounded-full bg-indigo-600/20 text-indigo-300 text-sm"
-                                    >
-                                        {hobby}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-
-                    {info.visitedPlaces?.length > 0 && (
-                        <div className="mt-10 bg-white/5 p-6 rounded-xl">
-                            <h3 className="text-xl font-semibold mb-4 text-white">
-                                Visited Places
-                            </h3>
-                            <div className="flex flex-wrap gap-3">
-                                {info.visitedPlaces.map((place, i) => (
-                                    <span
-                                        key={i}
-                                        className="px-4 py-1 rounded-full bg-emerald-600/20 text-emerald-300 text-sm"
-                                    >
-                                        {place}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-
-                    {info.about && (
-                        <div className="mt-10 bg-gradient-to-r from-indigo-900/40 to-purple-900/40 p-6 rounded-xl border border-white/10">
-                            <h3 className="text-xl font-semibold mb-3 text-white">
-                                About
-                            </h3>
-                            <p className="text-gray-300 leading-relaxed">
-                                {info.about}
-                            </p>
-                        </div>
-                    )}
-                </div>
-            </section>
-
-            {/* Spouse */}
-            {member.isMarried && member.spouse && (
-                <section className="bg-gradient-to-b from-gray-50 to-white py-14">
-                    <div className="max-w-5xl mx-auto px-4">
-                        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
-                            Spouse
-                        </h2>
-
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 bg-white rounded-2xl shadow-lg p-6 sm:p-10">
-                            {/* Husband / Wife */}
-                            <div className="text-center">
-                                <img
-                                    src={member.image}
-                                    className="w-24 h-24 rounded-full mx-auto border-4 border-indigo-200"
-                                    alt={member.name}
-                                />
-                                <p className="mt-3 font-semibold">{member.name}</p>
-                            </div>
-
-                            <div className="text-3xl text-pink-500 font-bold">And</div>
-
-                            {/* Spouse */}
-                            <div className="text-center">
-                                <img
-                                    src={member.spouse.image}
-                                    className="w-24 h-24 rounded-full mx-auto border-4 border-pink-200"
-                                    alt={member.spouse.name}
-                                />
-                                <p className="mt-3 font-semibold">
-                                    {member.spouse.name}
-                                </p>
-                            </div>
+            {/* Family Connections (Spouse/Children) */}
+            <section className="max-w-4xl mx-auto px-6 py-4">
+                {member.isMarried && member.spouse && (
+                    <div className="mb-12 text-center">
+                        <h2 className="text-2xl font-serif font-bold mb-6">Spouse</h2>
+                        <div className="inline-flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-slate-100">
+                            <img src={member.spouse.image} alt={member.spouse.name} className="w-20 h-20 rounded-full object-cover mb-3" />
+                            <p className="font-semibold">{member.spouse.name}</p>
                         </div>
                     </div>
-                </section>
-            )}
+                )}
 
-
-            {/* Children */}
-            {member.children?.length > 0 && (
-                <section className="bg-gradient-to-b from-white to-gray-50 py-14">
-                    <div className="max-w-5xl mx-auto px-4">
-                        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
-                            Children
-                        </h2>
-
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                {member.children?.length > 0 && (
+                    <div className="text-center">
+                        <h2 className="text-2xl font-serif font-bold mb-6">Children</h2>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
                             {member.children.map((child) => (
-                                <Link
-                                    key={child.id}
-                                    to={`/profile/${child.id}`}
-                                    className="group bg-white rounded-2xl p-5 text-center shadow-md hover:shadow-xl transition"
-                                >
-                                    <img
-                                        src={child.image}
-                                        alt={child.name}
-                                        className="w-20 h-20 rounded-full mx-auto mb-3 border-4 border-white"
-                                    />
-                                    <p className="font-semibold">{child.name}</p>
-                                    <span className="text-sm text-indigo-600">
-                                        View Profile →
-                                    </span>
+                                <Link key={child.id} to={`/profile/${child.id}`} className="group p-4 bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                                    <img src={child.image} alt={child.name} className="w-16 h-16 rounded-full mx-auto mb-3 object-cover" />
+                                    <p className="font-medium text-sm group-hover:text-amber-700">{child.name}</p>
+                                    <p className="font-medium text-sm text-blue-700 flex justify-center items-center gap-1 ">
+                                        <span>click</span>
+                                        <span className="flex itms-center justify-center">
+                                            <FaArrowRight size={9} />
+                                        </span>
+                                    </p>
                                 </Link>
                             ))}
                         </div>
                     </div>
-                </section>
-            )}
-
-            {/* ✅ SEE FAMILY PHOTOS (NOW WORKS) */}
-            <div
-                className="mt-4 text-center flex flex-col justify-center items-center animate-fadeIn opacity-0 py-4"
-                style={{ animationDelay: "800ms" }}
-            >
-                <button
-                    onClick={() => navigate("/family-gallery")}
-                    className="
-                        px-8 py-4 rounded-full
-                        bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
-                        text-white font-semibold text-lg
-                        shadow-lg hover:scale-105 transition cursor-pointer
-                    "
-                >
-                    See Family Photos
-                </button>
-
-                <div className="mt-6 inline-flex items-center space-x-4 text-gray-500">
-                    <div className="h-px w-12 bg-gradient-to-r from-transparent to-gray-400"></div>
-                    <span className="text-sm">Family • Together</span>
-                    <div className="h-px w-12 bg-gradient-to-r from-gray-400 to-transparent"></div>
-                </div>
-            </div>
+                )}
+            </section>
 
             <Footer />
-        </>
+        </div>
     );
 };
 
-const InfoRow = ({ label, value, icon }) => (
-    <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
-        <span className="text-2xl">{icon}</span>
-        <div>
-            <p className="text-sm text-gray-400">{label}</p>
-            <p className="text-white font-medium">{value}</p>
-        </div>
+const InfoRow = ({ label, value }) => (
+    <div className="bg-white p-5 rounded-xl border border-slate-100 shadow-sm">
+        <p className="text-xs text-slate-400 uppercase tracking-wider mb-1">{label}</p>
+        <p className="font-medium text-slate-800">{value}</p>
     </div>
 );
 
 export default ProfilePage;
-
-
-

@@ -52,7 +52,7 @@ const tahira_Profile = '/gallery/profileImage/tahira-1.jpg'
 const tauheed_Profile = '/gallery/profileImage/tauheed-1.jpg'
 
 export const family = {
-    familyName: "The Noor Family",
+    familyName: "The Rahmat Family",
 
     /* ===================== PARENTS ===================== */
     parents: {
@@ -166,7 +166,7 @@ export const family = {
                         education: "Masters (MCA)",
                         father: "Murtuja Ali",
                         mother: "Fargab aara",
-                        occupation: "Job in Haidrabad",
+                        occupation: "Banglore",
                         hobbies: ["Cycling", "Games", "Football"],
                         favoriteColor: "Black",
                         favoriteFood: "Biryani",
@@ -327,7 +327,7 @@ export const family = {
                         education: "Graduate",
                         father: "Kaisar Ali",
                         mother: "Trannum Praveen",
-                        occupation: "Job",
+                        occupation: "Juice Shopkeeper",
                         hobbies: ["Social Media", "Traveling"],
                         favoriteColor: "Black",
                         favoriteFood: "Aalu Paratha",
@@ -982,7 +982,6 @@ export const family = {
             id: "sibling-mohammad-raza",
             name: "Mohammad Raza",
             image: raza_Profile,
-            portfolio: "https://raza-portfolio-pink.vercel.app/",
             isMarried: false,
             spouse: null,
             personalInfo: {
@@ -991,7 +990,7 @@ export const family = {
                 education: "B.Tech",
                 father: "Shaikh Ali Ullah",
                 mother: "Sadrun Nisha",
-                occupation: "Software Engineer",
+                occupation: "Software Developer",
                 hobbies: ["Coding", "Teaching", "Learning new technologies"],
                 favoriteColor: "Black",
                 favoriteFood: "Soyabeen",

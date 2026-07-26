@@ -54,7 +54,7 @@ const tauheed_Profile = '/gallery/profileImage/tauheed-1.jpg'
 export const family = {
     familyName: "The Rahmat Family",
 
-    
+
     /* ===================== PARENTS ===================== */
     parents: {
         father: {
@@ -159,8 +159,27 @@ export const family = {
                     id: "child-sahib-musarraf",
                     name: "Sahib Musarraf",
                     image: sahib_Profile,
-                    isMarried: false,
-                    spouse: null,
+                    isMarried: true,
+                    spouse: {
+                        name: "Coming Soon...",
+                        image: Image1,
+                        personalInfo: {
+                            dob: "",
+                            bloodGroup: "",
+                            education: "",
+                            father: "--",
+                            mother: "--",
+                            occupation: "Homemaker",
+                            hobbies: ["Cooking", "Stitching"],
+                            favoriteColor: "Pink",
+                            favoriteFood: "Chicken Curry",
+                            visitedPlaces: ["Delhi", "Agra"],
+                            phone: "",
+                            about: "Caring and supportive wife.",
+                            address: "Sarbhoka, Chhattishgarh"
+
+                        },
+                    },
                     personalInfo: {
                         dob: "06-02-1999",
                         bloodGroup: "O+",

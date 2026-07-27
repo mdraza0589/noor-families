@@ -36,7 +36,7 @@ const ProfilePage = () => {
                     onClick={() => navigate(-1)}
                     className="flex items-center gap-2 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 px-5 py-2.5 rounded-full shadow-sm border border-slate-200 transition-all font-medium text-sm"
                 >
-                    ← Back
+                    ←
                 </button>
             </div>
 

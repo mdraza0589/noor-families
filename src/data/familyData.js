@@ -15,7 +15,7 @@ const child2 = "/images/image-2.png"
 const aizah_Profile = '/gallery/profileImage/aizah.jpg'
 const dilshad_Profile = '/gallery/profileImage/dilshad.jpg'
 const jugnu_Profile = '/gallery/profileImage/jugnu.jpg'
-const raza_Profile = '/gallery/profileImage/raza.jpg'
+const raza_Profile = '/gallery/profileImage/raza3.jpg'
 const shad_Profile = '/gallery/profileImage/shad.jpg'
 const ahamad_Profile = '/gallery/profileImage/ahamad.png'
 const mashuk_Profile = '/gallery/profileImage/mashuk.jpg'
@@ -1010,7 +1010,7 @@ export const family = {
                 education: "B.Tech",
                 father: "Shaikh Ali Ullah",
                 mother: "Sadrun Nisha",
-                occupation: "Software Developer",
+                occupation: "B.Tech",
                 hobbies: ["Coding", "Teaching", "Learning new technologies"],
                 favoriteColor: "Black",
                 favoriteFood: "Soyabeen",

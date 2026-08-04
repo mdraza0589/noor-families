@@ -21,7 +21,7 @@ const HomePage = () => {
       </section>
 
       {/* Parents Section - Circular Portrait Style */}
-      <section className="py-4 bg-white border-y border-slate-100">
+      <section className="py-4 bg-white border-y border-slate-100 rounded-md mx-5 shadow-sm">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24">
             {[father, mother].map((p) => (
